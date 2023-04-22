@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/MagKursach/app/src/main/res/layout-v23/app_toolbar.xml" value="0.221875" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/MagKursach/app/src/main/res/layout/activity_abb_multipl_formulas.xml" value="0.33" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/MagKursach/app/src/main/res/layout/activity_areas_of_polygons.xml" value="0.3428442028985507" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/MagKursach/app/src/main/res/layout/activity_geometry_figures.xml" value="0.3446557971014493" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/MagKursach/app/src/main/res/layout/activity_main.xml" value="0.27708333333333335" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/MagKursach/app/src/main/res/layout/activity_rad_to_degrees.xml" value="0.33" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/MagKursach/app/src/main/res/layout/activity_stereometria.xml" value="0.3446557971014493" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/MagKursach/app/src/main/res/layout/app_bar_main.xml" value="0.3428442028985507" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/MagKursach/app/src/main/res/layout/app_toolbar.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/MagKursach/app/src/main/res/layout/content_main.xml" value="0.3428442028985507" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/MagKursach/app/src/main/res/layout/fragment_algebra.xml" value="0.33" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/MagKursach/app/src/main/res/layout/fragment_gallery.xml" value="0.3428442028985507" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/MagKursach/app/src/main/res/layout/fragment_home.xml" value="0.3428442028985507" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/MagKursach/app/src/main/res/layout/fragment_slideshow.xml" value="0.3428442028985507" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/MagKursach/app/src/main/res/layout/nav_header_main.xml" value="0.3428442028985507" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/MagKursach/app/src/main/res/menu/activity_main_drawer.xml" value="0.29375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

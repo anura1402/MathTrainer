@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar2"
+        layout="@layout/app_toolbar"
+        app:titleTextAppearance ="@style/Toolbar.TitleText"/>
+<ScrollView
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rad_to_Degrees">
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/textRad1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/main_text"
+        android:gravity="start"
+        android:text="I четверть"
+        android:textColor="@color/main_text_color"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/formula_pi6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <io.github.kexanie.library.MathView
+        android:id="@+id/formula_pi6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:engine="KaTeX"
+        app:layout_constraintBottom_toTopOf="@+id/formula_pi4"
+        app:layout_constraintTop_toBottomOf="@+id/textRad1"
+        app:text="$$\\frac{\\pi}{6}=30^{\\circ}$$" />
+
+
+    <io.github.kexanie.library.MathView
+        android:id="@+id/formula_pi4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:engine="MathJax"
+        app:layout_constraintBottom_toTopOf="@+id/formula_pi3"
+        app:layout_constraintTop_toBottomOf="@+id/formula_pi6"
+        app:text="$$\\frac{\\pi}{4}=45^{\\circ}$$" />
+
+    <io.github.kexanie.library.MathView
+        android:id="@+id/formula_pi3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:engine="MathJax"
+        app:layout_constraintBottom_toTopOf="@+id/formula_pi2"
+        app:layout_constraintTop_toBottomOf="@+id/formula_pi4"
+        app:text="$$\\frac{\\pi}{3}=60^{\\circ}$$" />
+
+    <io.github.kexanie.library.MathView
+        android:id="@+id/formula_pi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:engine="MathJax"
+        app:layout_constraintBottom_toTopOf="@+id/textRad2"
+        app:layout_constraintTop_toBottomOf="@+id/formula_pi3"
+        app:text="$$\\frac{\\pi}{2} = 90^{\\circ}$$" />
+
+    <TextView
+        android:id="@+id/textRad2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/main_text"
+        android:gravity="start"
+        android:text="II четверть"
+        android:textColor="@color/main_text_color"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/formula_2pi3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formula_pi2" />
+    <io.github.kexanie.library.MathView
+        android:id="@+id/formula_2pi3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:engine="MathJax"
+        app:layout_constraintBottom_toTopOf="@+id/formula_3pi4"
+        app:layout_constraintTop_toBottomOf="@+id/textRad2"
+        app:text="$$\\frac{2\\pi}{3}=120^{\\circ}$$" />
+
+
+    <io.github.kexanie.library.MathView
+        android:id="@+id/formula_3pi4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:engine="MathJax"
+        app:layout_constraintBottom_toTopOf="@+id/formula_5pi6"
+        app:layout_constraintTop_toBottomOf="@+id/formula_2pi3"
+        app:text="$$\\frac{3\\pi}{4}=135^{\\circ}$$" />
+
+    <io.github.kexanie.library.MathView
+        android:id="@+id/formula_5pi6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:engine="MathJax"
+        app:layout_constraintBottom_toTopOf="@+id/formula_pi"
+        app:layout_constraintTop_toBottomOf="@+id/formula_3pi4"
+        app:text="$$\\frac{5\\pi}{6}=150^{\\circ}$$" />
+
+    <io.github.kexanie.library.MathView
+        android:id="@+id/formula_pi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:engine="MathJax"
+        app:layout_constraintBottom_toTopOf="@+id/textRad3"
+        app:layout_constraintTop_toBottomOf="@+id/formula_5pi6"
+        app:text="$$\\pi = 180^{\\circ}$$" />
+
+    <TextView
+        android:id="@+id/textRad3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/main_text"
+        android:gravity="start"
+        android:text="III четверть"
+        android:textColor="@color/main_text_color"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/formula_7pi6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formula_pi" />
+    <io.github.kexanie.library.MathView
+        android:id="@+id/formula_7pi6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:engine="MathJax"
+        app:layout_constraintBottom_toTopOf="@+id/formula_5pi4"
+        app:layout_constraintTop_toBottomOf="@+id/textRad3"
+        app:text="$$\\frac{7\\pi}{6}=210^{\\circ}$$" />
+
+
+    <io.github.kexanie.library.MathView
+        android:id="@+id/formula_5pi4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:engine="MathJax"
+        app:layout_constraintBottom_toTopOf="@+id/formula_4pi3"
+        app:layout_constraintTop_toBottomOf="@+id/formula_7pi6"
+        app:text="$$\\frac{5\\pi}{4}=225^{\\circ}$$" />
+
+    <io.github.kexanie.library.MathView
+        android:id="@+id/formula_4pi3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:engine="MathJax"
+        app:layout_constraintBottom_toTopOf="@+id/formula_3pi2"
+        app:layout_constraintTop_toBottomOf="@+id/formula_5pi4"
+        app:text="$$\\frac{4\\pi}{3}=240^{\\circ}$$" />
+
+    <io.github.kexanie.library.MathView
+        android:id="@+id/formula_3pi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:engine="MathJax"
+        app:layout_constraintBottom_toTopOf="@+id/textRad4"
+        app:layout_constraintTop_toBottomOf="@+id/formula_5pi6"
+        app:text="$$\\frac{3\\pi}{2} = 270^{\\circ}$$" />
+    <TextView
+        android:id="@+id/textRad4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/main_text"
+        android:gravity="start"
+        android:text="IV четверть"
+        android:textColor="@color/main_text_color"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/formula_5pi3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formula_3pi2" />
+    <io.github.kexanie.library.MathView
+        android:id="@+id/formula_5pi3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:engine="MathJax"
+        app:layout_constraintBottom_toTopOf="@+id/formula_7pi4"
+        app:layout_constraintTop_toBottomOf="@+id/textRad3"
+        app:text="$$\\frac{7\\pi}{6}=210^{\\circ}$$" />
+
+
+    <io.github.kexanie.library.MathView
+        android:id="@+id/formula_7pi4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:engine="MathJax"
+        app:layout_constraintBottom_toTopOf="@+id/formula_11pi6"
+        app:layout_constraintTop_toBottomOf="@+id/formula_5pi3"
+        app:text="$$\\frac{5\\pi}{4}=225^{\\circ}$$" />
+
+    <io.github.kexanie.library.MathView
+        android:id="@+id/formula_11pi6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:engine="MathJax"
+        app:layout_constraintBottom_toTopOf="@+id/formula_2pi"
+        app:layout_constraintTop_toBottomOf="@+id/formula_7pi4"
+        app:text="$$\\frac{4\\pi}{3}=240^{\\circ}$$" />
+
+    <io.github.kexanie.library.MathView
+        android:id="@+id/formula_2pi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:engine="MathJax"
+
+        app:layout_constraintTop_toBottomOf="@+id/formula_11pi6"
+        app:text="$$\\frac{3\\pi}{2} = 270^{\\circ}$$" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

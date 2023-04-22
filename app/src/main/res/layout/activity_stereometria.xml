@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar2"
+        layout="@layout/app_toolbar"
+        app:titleTextAppearance ="@style/Toolbar.TitleText"/>
+<ScrollView
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Stereometria">
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textGem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/just_text"
+            android:gravity="start"
+            android:text="Уравнение прямой"
+            android:textColor="@color/main_text_color"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/formula_line"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:engine="MathJax"
+            app:layout_constraintBottom_toTopOf="@+id/textGem1"
+            app:layout_constraintTop_toBottomOf="@+id/textGem2"
+            app:text="$$ax+by+c=0$$" />
+
+        <TextView
+            android:id="@+id/textGem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/just_text"
+            android:gravity="start"
+            android:text="Уравнение прчмой по угловому коэффициенту"
+            android:textColor="@color/main_text_color"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/formula_line_angle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/formula_line" />
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_line_angle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:engine="MathJax"
+            app:layout_constraintBottom_toTopOf="@+id/textGem3"
+            app:layout_constraintTop_toBottomOf="@+id/textGem2"
+            app:text="$$y=kx+l$$" />
+
+        <TextView
+            android:id="@+id/textGem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/just_text"
+            android:gravity="start"
+            android:text="Уравнение прчмой по точке и угловому коэффициенту"
+            android:textColor="@color/main_text_color"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/formula_line_angle_and_dot"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/formula_line_angle" />
+
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_line_angle_and_dot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:engine="MathJax"
+            app:layout_constraintBottom_toTopOf="@+id/textGem4"
+            app:layout_constraintTop_toBottomOf="@+id/textGem3"
+            app:text="$$y-y_1=k(x-x_1)$$" />
+
+        <TextView
+            android:id="@+id/textGem4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/just_text"
+            android:gravity="start"
+            android:text="Уравнение по двум точкам"
+            android:textColor="@color/main_text_color"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/formula_line_two_dots"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/formula_line_angle_and_dot" />
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_line_two_dots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:engine="MathJax"
+            app:layout_constraintBottom_toTopOf="@+id/textGem5"
+            app:layout_constraintTop_toBottomOf="@+id/textGem4"
+            app:text="$$\frac{y-y_1}{y_2-y_1}=\frac{x-x_1}{x_2-x_1}$$" />
+        <TextView
+            android:id="@+id/textGem5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/just_text"
+            android:gravity="start"
+            android:text="Уравнение окружности с центром в точке(х0,у0)"
+            android:textColor="@color/main_text_color"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/formula_line_circle_xy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/formula_line_two_dots" />
+
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_line_circle_xy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:engine="MathJax"
+            app:layout_constraintBottom_toTopOf="@+id/textGem6"
+            app:layout_constraintTop_toBottomOf="@+id/textGem5"
+            app:text="$$(x-x_0)^2+(y-y0)^2=R^2$$" />
+
+        <TextView
+            android:id="@+id/textGem6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/just_text"
+            android:gravity="start"
+            android:text="Уравнение окружности с центром в начале координат"
+            android:textColor="@color/main_text_color"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/formula_line_circle_00"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/formula_line_circle_xy" />
+
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_line_circle_00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:engine="MathJax"
+            app:layout_constraintBottom_toTopOf="@+id/textGem7"
+            app:layout_constraintTop_toBottomOf="@+id/textGem6"
+            app:text="$$x^2+y^2=R^2$$" />
+
+        <TextView
+            android:id="@+id/textGem7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/just_text"
+            android:gravity="start"
+            android:text="Уравнение сферы с центром в точке(х0,у0,z0)"
+            android:textColor="@color/main_text_color"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/formula_sfera_xyz"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/formula_line_circle_00" />
+
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_sfera_xyz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:engine="MathJax"
+            app:layout_constraintBottom_toTopOf="@+id/textGem8"
+            app:layout_constraintTop_toBottomOf="@+id/textGem7"
+            app:text="$$(x-x_0)^2+(y-y0)^2+(z-z_0)^2=R^2$$" />
+
+        <TextView
+            android:id="@+id/textGem8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/just_text"
+            android:gravity="start"
+            android:text="Уравнение сферы с центром в начале координат"
+            android:textColor="@color/main_text_color"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/formula_sfera_000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/formula_sfera_xyz" />
+
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula_sfera_000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:engine="MathJax"
+            app:layout_constraintTop_toBottomOf="@+id/textGem8"
+            app:text="$$x^2+y^2+z^2=R^2$$" />
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

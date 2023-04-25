@@ -22,6 +22,7 @@
     <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="titleTextColor">@color/title_text</item>
+       <item name="android:windowTitleSize">8sp</item>
     </style>
     <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
         <item name="android:textSize">20sp</item>

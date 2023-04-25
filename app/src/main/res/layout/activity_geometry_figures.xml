@@ -100,7 +100,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/main_text"
+            android:fontFamily="@font/main_text2"
             android:gravity="start"
             android:text="Уравнение по двум точкам"
             android:textColor="@color/main_text_color"

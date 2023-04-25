@@ -17,10 +17,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.anura.magkursach.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity
+{
+    //implements View.OnClickListener{
+
 
     private AppBarConfiguration mAppBarConfiguration;
-    private CardView card1,card2,card3,card4,card5,card6,card7,card8,card9,card10;
+    //private CardView card1,card2,card3,card4,card5,card6,card7,card8,card9,card10;
     //cоздание активити
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-        //работа с CardView
+       /* //работа с CardView
 
         card1 = findViewById(R.id.cardView);
         card2 = findViewById(R.id.cardView2);
@@ -66,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         card7.setOnClickListener(this);
         card8.setOnClickListener(this);
         card9.setOnClickListener(this);
-        card10.setOnClickListener(this);
+        card10.setOnClickListener(this);*/
     }
     //создание выпадывающего меню
    /* @Override
@@ -83,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 || super.onSupportNavigateUp();
     }
 
-    @Override
+  /*  @Override
     public void onClick(View v) {
         Intent intent;
         switch (v.getId()){
@@ -97,5 +100,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
         }
-    }
+    }*/
 }

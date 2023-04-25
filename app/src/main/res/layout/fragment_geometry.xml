@@ -1,22 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.gallery.GalleryFragment">
+    tools:context=".ui.geometry.Geometry">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="Геометрия"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textMain_geom1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="24dp"
+            android:text="Планиметрия"
+            app:layout_constraintBottom_toTopOf="@+id/cardView_geom1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/main_text_color"
+            android:textSize="24sp"
+            android:fontFamily="@font/main_text2"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView_geom1"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textMain_geom1"
+            app:strokeWidth="3dp"
+            app:strokeColor="@color/main_theme">
+
+
+            <TextView
+                android:id="@+id/text_geom1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Геометрические фигуры"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:fontFamily="@font/just_text"
+                android:textSize="15dp"
+                android:textColor="@color/main_text_color"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView_geom2"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView_geom3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView_geom1"
+            app:strokeWidth="3dp"
+            app:strokeColor="@color/main_theme">
+            <TextView
+                android:id="@+id/text_geom2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Треугольники"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:fontFamily="@font/just_text"
+                android:textSize="15dp"
+                android:textColor="@color/main_text_color"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView_geom3"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView_geom4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView_geom2"
+            app:strokeWidth="3dp"
+            app:strokeColor="@color/main_theme">
+            <TextView
+                android:id="@+id/text_geom3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Окружность"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:fontFamily="@font/just_text"
+                android:textSize="15dp"
+                android:textColor="@color/main_text_color"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView_geom4"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView_geom5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView_geom3"
+            app:strokeWidth="3dp"
+            app:strokeColor="@color/main_theme">
+            <TextView
+                android:id="@+id/text_geom4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Многоугольники"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:fontFamily="@font/just_text"
+                android:textSize="15dp"
+                android:textColor="@color/main_text_color"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView_geom5"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/textMain_geom2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView_geom4"
+            app:strokeWidth="3dp"
+            app:strokeColor="@color/main_theme">
+            <TextView
+                android:id="@+id/text_geom5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Площади фигур"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:fontFamily="@font/just_text"
+                android:textSize="15dp"
+                android:textColor="@color/main_text_color"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/textMain_geom2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="Стереометрия"
+            app:layout_constraintBottom_toTopOf="@+id/cardView_geom6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView_geom5"
+            android:textSize="24sp"
+            android:fontFamily="@font/main_text2"
+            android:textColor="@color/main_text_color"
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView_geom6"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView_geom7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textMain_geom2"
+            app:strokeWidth="3dp"
+            app:strokeColor="@color/main_theme">
+            <TextView
+                android:id="@+id/text_geom6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Площади пространственных фигур"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:fontFamily="@font/just_text"
+                android:textSize="15dp"
+                android:textColor="@color/main_text_color"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView_geom7"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView_geom6"
+            app:strokeWidth="3dp"
+            app:strokeColor="@color/main_theme">
+            <TextView
+                android:id="@+id/text_geom7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Объемы пространственных фигур"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:fontFamily="@font/just_text"
+                android:textSize="15dp"
+                android:textColor="@color/main_text_color"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -2,6 +2,8 @@ plugins {
     id 'com.android.application'
 }
 
+
+
 android {
     compileSdk 33
 
@@ -27,7 +29,9 @@ android {
     }
     buildFeatures {
         viewBinding true
+        dataBinding true
     }
+    namespace 'com.anura.magkursach'
 }
 repositories {
 

@@ -1,4 +1,4 @@
-package com.anura.magkursach.ui.slideshow;
+package com.anura.magkursach.ui.trainer;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

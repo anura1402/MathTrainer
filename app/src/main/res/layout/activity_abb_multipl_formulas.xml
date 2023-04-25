@@ -26,11 +26,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/main_text"
+        android:fontFamily="@font/main_text2"
         android:gravity="start"
         android:text="Многочлены второй степени"
         android:textColor="@color/main_text_color"
-        android:textSize="18dp"
+        android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
@@ -115,11 +115,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/main_text"
+        android:fontFamily="@font/main_text2"
         android:gravity="start"
         android:text="Многочлены третьей степени"
         android:textColor="@color/main_text_color"
-        android:textSize="18dp"
+        android:textSize="22sp"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/formula_sub_of_squares" />

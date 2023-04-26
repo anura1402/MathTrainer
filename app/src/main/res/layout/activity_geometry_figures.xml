@@ -36,17 +36,26 @@
             app:layout_constraintBottom_toTopOf="@+id/formula_line"
             app:layout_constraintStart_toStartOf="parent"
              />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@color/main_theme" />
         <io.github.kexanie.library.MathView
             android:id="@+id/formula_line"
-            android:layout_width="match_parent"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="5dp"
             app:engine="MathJax"
             app:layout_constraintBottom_toTopOf="@+id/textGem1"
             app:layout_constraintTop_toBottomOf="@+id/textGem2"
             app:text="$$ax+by+c=0$$" />
-
+    </LinearLayout>
         <TextView
             android:id="@+id/textGem2"
             android:layout_width="wrap_content"
@@ -60,17 +69,26 @@
             app:layout_constraintBottom_toTopOf="@+id/formula_line_angle"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/formula_line" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@color/main_theme" />
         <io.github.kexanie.library.MathView
             android:id="@+id/formula_line_angle"
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="5dp"
             app:engine="MathJax"
             app:layout_constraintBottom_toTopOf="@+id/textGem3"
             app:layout_constraintTop_toBottomOf="@+id/textGem2"
             app:text="$$y=kx+l$$" />
-
+    </LinearLayout>
         <TextView
             android:id="@+id/textGem3"
             android:layout_width="wrap_content"
@@ -85,17 +103,26 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/formula_line_angle" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@color/main_theme" />
         <io.github.kexanie.library.MathView
             android:id="@+id/formula_line_angle_and_dot"
-            android:layout_width="match_parent"
+            android:layout_width="165dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="5dp"
             app:engine="MathJax"
             app:layout_constraintBottom_toTopOf="@+id/textGem4"
             app:layout_constraintTop_toBottomOf="@+id/textGem3"
             app:text="$$y-y_1=k(x-x_1)$$" />
-
+    </LinearLayout>
         <TextView
             android:id="@+id/textGem4"
             android:layout_width="wrap_content"
@@ -110,16 +137,26 @@
             app:layout_constraintBottom_toTopOf="@+id/formula_line_two_dots"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/formula_line_angle_and_dot" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@color/main_theme" />
         <io.github.kexanie.library.MathView
             android:id="@+id/formula_line_two_dots"
-            android:layout_width="match_parent"
+            android:layout_width="165dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="5dp"
             app:engine="MathJax"
             app:layout_constraintBottom_toTopOf="@+id/textGem5"
             app:layout_constraintTop_toBottomOf="@+id/textGem4"
             app:text="$$\\frac{y-y_1}{y_2-y_1}=\\frac{x-x_1}{x_2-x_1}$$" />
+    </LinearLayout>
         <TextView
             android:id="@+id/textGem5"
             android:layout_width="wrap_content"
@@ -135,17 +172,26 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/formula_line_two_dots" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@color/main_theme" />
         <io.github.kexanie.library.MathView
             android:id="@+id/formula_line_circle_xy"
-            android:layout_width="match_parent"
+            android:layout_width="230dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="5dp"
             app:engine="MathJax"
             app:layout_constraintBottom_toTopOf="@+id/textGem6"
             app:layout_constraintTop_toBottomOf="@+id/textGem5"
-            app:text="$$(x-x_0)^2+(y-y0)^2=R^2$$" />
-
+            app:text="$$(x-x_0)^2+(y-y_0)^2=R^2$$" />
+    </LinearLayout>
         <TextView
             android:id="@+id/textGem6"
             android:layout_width="wrap_content"
@@ -159,18 +205,27 @@
             app:layout_constraintBottom_toTopOf="@+id/formula_line_circle_00"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/formula_line_circle_xy" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@color/main_theme" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/formula_line_circle_00"
-            android:layout_width="match_parent"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="5dp"
             app:engine="MathJax"
             app:layout_constraintBottom_toTopOf="@+id/textGem7"
             app:layout_constraintTop_toBottomOf="@+id/textGem6"
             app:text="$$x^2+y^2=R^2$$" />
-
+    </LinearLayout>
         <TextView
             android:id="@+id/textGem7"
             android:layout_width="wrap_content"
@@ -185,17 +240,26 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/formula_line_circle_00" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@color/main_theme" />
         <io.github.kexanie.library.MathView
             android:id="@+id/formula_sfera_xyz"
-            android:layout_width="match_parent"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="5dp"
             app:engine="MathJax"
             app:layout_constraintBottom_toTopOf="@+id/textGem8"
             app:layout_constraintTop_toBottomOf="@+id/textGem7"
             app:text="$$(x-x_0)^2+(y-y_0)^2+(z-z_0)^2=R^2$$" />
-
+    </LinearLayout>
         <TextView
             android:id="@+id/textGem8"
             android:layout_width="wrap_content"
@@ -209,16 +273,26 @@
             app:layout_constraintBottom_toTopOf="@+id/formula_sfera_000"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/formula_sfera_xyz" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@color/main_theme" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/formula_sfera_000"
-            android:layout_width="match_parent"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="5dp"
             app:engine="MathJax"
             app:layout_constraintTop_toBottomOf="@+id/textGem8"
             app:text="$$x^2+y^2+z^2=R^2$$" />
+    </LinearLayout>
     </LinearLayout>
 
 </ScrollView>

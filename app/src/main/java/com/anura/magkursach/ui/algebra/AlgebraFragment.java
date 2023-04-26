@@ -20,9 +20,11 @@ import com.anura.magkursach.databinding.FragmentAlgebraBinding;
 public class AlgebraFragment extends Fragment {
 
     private FragmentAlgebraBinding binding;
+    Intent intent;
     private CardView card1, card2, card3, card4, card5, card6, card7, card8, card9, card10;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
-                         ViewGroup container, Bundle savedInstanceState) {
+                             ViewGroup container, Bundle savedInstanceState) {
         //HomeViewModel homeViewModel =
         //new ViewModelProvider(this).get(HomeViewModel.class);
         //super.onCreate(savedInstanceState);
@@ -40,7 +42,7 @@ public class AlgebraFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-    /*
+
     @Override
 
     public void onViewCreated(View view, Bundle savedInstanceState)  {
@@ -57,33 +59,20 @@ public class AlgebraFragment extends Fragment {
         card9 = binding.cardView9;
         card10 = binding.cardView10;
 
-        card1.setOnClickListener((View.OnClickListener) this);
-        //card2.setOnClickListener(this);
-        //card3.setOnClickListener(this);
-        //card4.setOnClickListener(this);
-        //card5.setOnClickListener(this);
-        card6.setOnClickListener((View.OnClickListener) this);
-        //card7.setOnClickListener(this);
-        //card8.setOnClickListener(this);
-        //card9.setOnClickListener(this);
-        //card10.setOnClickListener(this);
-        @Override
-        public void onClick(View v) {
-            Intent intent;
-            switch (v.getId()) {
-                case R.id.cardView:
-                    intent = new Intent(getActivity(), Abb_multipl_formulas.class);
-                    startActivity(intent);
-                    break;
-                case R.id.cardView6:
-                    intent = new Intent(getActivity(), Rad_to_Degrees.class);
-                    startActivity(intent);
-                    break;
 
+        card1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getActivity(),Abb_multipl_formulas.class);
+                startActivity(intent);
             }
-        }
-    }*/
-
-
-
+        });
+        card6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getActivity(),Rad_to_Degrees.class);
+                startActivity(intent);
+            }
+        });
+    }
 }

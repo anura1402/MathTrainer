@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar2"
+        layout="@layout/app_toolbar"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <ScrollView
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".StereometriaSquares">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/textHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/main_text2"
+                    android:gravity="start"
+                    android:text="Обозначения:"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textHelper"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textHelper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="11dp"
+                    android:fontFamily="@font/just_text"
+                    android:gravity="start"
+                    android:text="@string/helper_values"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toTopOf="@+id/textSterSqMain"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textHelp" />
+
+
+            <TextView
+                android:id="@+id/textSterSqMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Прямая призма"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq1"
+                app:layout_constraintTop_toBottomOf="@+id/textHelper"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSterSq1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="11dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь боковой поверхности прямой призмы"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSqMain" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq1"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq2"
+                app:text="$$S_{бок}=Ph$$" />
+
+            <TextView
+                android:id="@+id/textSterSq2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь поверхности прямой призмы"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq1" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSqMain2"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq2"
+                app:text="$$S= S_{бок}+2S_{осн}$$" />
+
+            <TextView
+                android:id="@+id/textSterSqMain2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="11dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Прямоугольный параллелепипед"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSterSq3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь боковой поверхности прямоугольного параллелепипеда"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSqMain2" />
+
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq4"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq3"
+                app:text="$$S_{бок}=2(ac+bc)$$" />
+
+
+            <TextView
+                android:id="@+id/textSterSq4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь поверхности прямоугольного параллелепипеда"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq3" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSqMain3"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq4"
+                app:text="$$S=2(ab+bc+ac)$$" />
+
+            <TextView
+                android:id="@+id/textSterSqMain3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Куб"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSterSq5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="11dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь боковой поверхности куба"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSqMain3" />
+
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq6"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq5"
+                app:text="$$S_{бок}=4a^2$$" />
+
+            <TextView
+                android:id="@+id/textSterSq6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь поверхности куба"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq5" />
+
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSqMain4"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq6"
+                app:text="$$S=6a^2$$" />
+
+            <TextView
+                android:id="@+id/textSterSqMain4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="11dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Правильная пирамида"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSterSq7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь боковой поверхности правильной пирамиды"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSqMain4" />
+
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq8"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq7"
+                app:text="$$S_{бок}=\\frac{1}{2}*P*h_s$$" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq8"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq7"
+                app:text="$$S_{бок}=\\frac{S_{осн}}{cos(\\varphi)}$$" />
+
+            <TextView
+                android:id="@+id/textSterSq8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь боковой поверхности правильной усеченной пирамиды"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq8" />
+
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq10"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq8"
+                app:text="$$S_{бок}=\\frac{1}{2}(P_1+P_2)*h_s$$" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq9"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq9"
+                app:text="$$S_{бок}=\\frac{S_1-S_2}{cos(\\varphi)}$$" />
+
+            <TextView
+                android:id="@+id/textSterSq9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь поверхности усеченной пирамиды"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq10" />
+
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSqMain5"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq9"
+                app:text="$$S=S_{бок}+S_1+S_2$$" />
+
+            <TextView
+                android:id="@+id/textSterSqMain5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="11dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Цилиндр"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq11"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSterSq10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь боковой поверхности цилиндра"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSqMain5" />
+
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq11"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq10"
+                app:text="$$S_{бок}=2\\pi rh$$" />
+
+            <TextView
+                android:id="@+id/textSterSq11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь основания цилиндра"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq12" />
+
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq12"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq11"
+                app:text="$$S_{осн}=\\pi r^2$$" />
+
+            <TextView
+                android:id="@+id/textSterSq12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь поверхности цилиндра"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq13" />
+
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq13"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq12"
+                app:text="$$S=2\\pi r(r+h)$$" />
+
+            <TextView
+                android:id="@+id/textSterSqMain6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="11dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Конус"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq14"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSterSq13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь боковой поверхности конуса"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSqMain6" />
+
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq16"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq13"
+                app:text="$$S_{бок}=\\pi rl$$" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq14"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq15"
+                app:text="$$S_{бок}=\\frac{\\pi l^2 \\alpha}{360}$$" />
+
+            <TextView
+                android:id="@+id/textSterSq14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь поверхности конуса"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq17"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq16" />
+
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq15"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq14"
+                app:text="$$S=\\pi r(r+l)$$" />
+
+            <TextView
+                android:id="@+id/textSterSq15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь боковой поверхности усеченного конуса"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq17" />
+
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq16"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq15"
+                app:text="$$S_{бок}=\\pi (R+l)l$$" />
+
+            <TextView
+                android:id="@+id/textSterSq16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь поверхности усеченного конуса"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq19"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq18" />
+
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSqMain7"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq16"
+                app:text="$$S=\\pi (R+r)l+\\pi R^2+\\pi r^2$$" />
+
+            <TextView
+                android:id="@+id/textSterSqMain7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="11dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Шар"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq17"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq19"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSterSq17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь поверхности шара"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSqMain7" />
+
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq18"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq17"
+                app:text="$$S=4\\pi R^2$$" />
+
+            <TextView
+                android:id="@+id/textSterSq18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь поверхности шарового сегмента"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq21"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq20" />
+
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq19"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq18"
+                app:text="$$S = 2\\pi Rh$$" />
+
+            <TextView
+                android:id="@+id/textSterSq19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь поверхности шарового слоя"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq22"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq21" />
+
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq20"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq19"
+                app:text="$$S=2\\pi Rh$$" />
+
+            <TextView
+                android:id="@+id/textSterSq20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Площадь поверхности шарового сектора"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq23"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq22" />
+
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_SterSq23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:engine="MathJax"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq20"
+                app:text="$$S = \\pi R(2h+r)$$" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

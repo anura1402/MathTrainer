@@ -6,13 +6,13 @@
 
     <fragment
         android:id="@+id/nav_algebra"
-        android:name="com.anura.magkursach.ui.algebra.Algebra"
+        android:name="com.anura.magkursach.ui.algebra.AlgebraFragment"
         android:label="@string/menu_algebra"
         tools:layout="@layout/fragment_algebra" />
 
     <fragment
         android:id="@+id/nav_geometry"
-        android:name="com.anura.magkursach.ui.geometry.Geometry"
+        android:name="com.anura.magkursach.ui.geometry.GeometryFragment"
         android:label="@string/menu_geometry"
         tools:layout="@layout/fragment_geometry" />
 

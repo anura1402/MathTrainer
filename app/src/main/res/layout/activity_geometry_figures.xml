@@ -17,7 +17,9 @@
     tools:context=".Geometry_figures">
 
 
-    <LinearLayout android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
 
         <TextView
@@ -52,7 +54,7 @@
             android:layout_marginStart="16dp"
             android:fontFamily="@font/just_text"
             android:gravity="start"
-            android:text="Уравнение прчмой по угловому коэффициенту"
+            android:text="Уравнение прямой по угловому коэффициенту"
             android:textColor="@color/main_text_color"
             android:textSize="18dp"
             app:layout_constraintBottom_toTopOf="@+id/formula_line_angle"
@@ -76,7 +78,7 @@
             android:layout_marginStart="16dp"
             android:fontFamily="@font/just_text"
             android:gravity="start"
-            android:text="Уравнение прчмой по точке и угловому коэффициенту"
+            android:text="Уравнение прямой по точке и угловому коэффициенту"
             android:textColor="@color/main_text_color"
             android:textSize="18dp"
             app:layout_constraintBottom_toTopOf="@+id/formula_line_angle_and_dot"
@@ -100,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/main_text2"
+            android:fontFamily="@font/just_text"
             android:gravity="start"
             android:text="Уравнение по двум точкам"
             android:textColor="@color/main_text_color"
@@ -117,7 +119,7 @@
             app:engine="MathJax"
             app:layout_constraintBottom_toTopOf="@+id/textGem5"
             app:layout_constraintTop_toBottomOf="@+id/textGem4"
-            app:text="$$\frac{y-y_1}{y_2-y_1}=\frac{x-x_1}{x_2-x_1}$$" />
+            app:text="$$\\frac{y-y_1}{y_2-y_1}=\\frac{x-x_1}{x_2-x_1}$$" />
         <TextView
             android:id="@+id/textGem5"
             android:layout_width="wrap_content"
@@ -192,7 +194,7 @@
             app:engine="MathJax"
             app:layout_constraintBottom_toTopOf="@+id/textGem8"
             app:layout_constraintTop_toBottomOf="@+id/textGem7"
-            app:text="$$(x-x_0)^2+(y-y0)^2+(z-z_0)^2=R^2$$" />
+            app:text="$$(x-x_0)^2+(y-y_0)^2+(z-z_0)^2=R^2$$" />
 
         <TextView
             android:id="@+id/textGem8"

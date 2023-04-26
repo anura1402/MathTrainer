@@ -11,15 +11,15 @@ import com.anura.magkursach.ui.geometry.GeometryFragment;
 
 import java.util.Objects;
 
-public class Geometry_figures extends AppCompatActivity {
+public class StereometriaSquares extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_geometry_figures);
+        setContentView(R.layout.activity_stereometria_squares);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
         if (toolbar != null){
-            toolbar.setTitle("Геометрические фигуры");
+            toolbar.setTitle("Площади пространственных фигур");
             setSupportActionBar(toolbar);
         }
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);

@@ -302,6 +302,7 @@
                     android:layout_marginStart="5dp"
                     app:engine="MathJax"
                     app:layout_constraintTop_toBottomOf="@+id/textView12"
+                    app:layout_constraintBottom_toTopOf="@+id/button"
                     app:text="$$a^3-b^3=(a-b)(a^2+ab+b^2)$$" />
             </LinearLayout>
 
@@ -309,7 +310,18 @@
                 android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Начать тренировку"
+                android:fontFamily="@font/main_text2"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/formula_sub_of_cub"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_trainer"/>
         </LinearLayout>
 
     </ScrollView>

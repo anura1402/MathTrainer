@@ -7,7 +7,10 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+
 import androidx.appcompat.widget.Toolbar;
 
 import java.util.Objects;
@@ -15,6 +18,8 @@ import java.util.Objects;
 import io.github.kexanie.library.MathView;
 
 public class Abb_multipl_formulas extends AppCompatActivity {
+    private Intent intent;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,13 +27,23 @@ public class Abb_multipl_formulas extends AppCompatActivity {
         setContentView(R.layout.activity_abb_multipl_formulas);
         //getSupportActionBar().hide();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
-        if (toolbar != null){
+        if (toolbar != null) {
             toolbar.setTitle("Формулы сокращенного умножения");
             setSupportActionBar(toolbar);
         }
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+        button = findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(Abb_multipl_formulas.this, Jump_trainer.class);
+                intent.putExtra("EXTRA_NEXT_ACTIVITY_CLASS", Abb_multipl_formulas.class);
+                startActivity(intent);
+            }
+        });
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {

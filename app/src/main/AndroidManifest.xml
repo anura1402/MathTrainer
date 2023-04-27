@@ -13,23 +13,25 @@
         android:theme="@style/Theme.MagKursach"
         tools:targetApi="31">
         <activity
-            android:name=".StereometriaSquares"
+            android:name=".Jump_trainer"
             android:exported="false"
             android:theme="@style/HelpToolbarTheme"/>
+        <activity
+            android:name=".StereometriaSquares"
+            android:exported="false"
+            android:theme="@style/HelpToolbarTheme" />
         <activity
             android:name=".Rad_to_Degrees"
             android:exported="false"
-            android:theme="@style/HelpToolbarTheme"/>
+            android:theme="@style/HelpToolbarTheme" />
         <activity
             android:name=".Abb_multipl_formulas"
             android:exported="false"
-            android:theme="@style/HelpToolbarTheme"
-            />
+            android:theme="@style/HelpToolbarTheme" />
         <activity
             android:name=".Geometry_figures"
             android:exported="false"
-            android:theme="@style/HelpToolbarTheme"
-            />
+            android:theme="@style/HelpToolbarTheme" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

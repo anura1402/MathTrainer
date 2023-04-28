@@ -7,6 +7,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import java.util.Objects;
 
@@ -26,8 +30,19 @@ public class Jump_trainer extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         extras = getIntent().getExtras();
         parentClass = (Class<Activity>)extras.getSerializable("EXTRA_NEXT_ACTIVITY_CLASS");
+        RadioGroup radioGroup = findViewById(R.id.radio_group);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                RadioButton radioButton = findViewById(checkedId);
+                radioButton.getText().toString();
+                TextView tv = findViewById(R.id.textView13);
+                tv.setText(radioButton.getText().toString());
+            }
+        });
 
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {

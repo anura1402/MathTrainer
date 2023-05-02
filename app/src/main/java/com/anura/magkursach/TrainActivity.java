@@ -231,11 +231,13 @@ public class TrainActivity extends AppCompatActivity {
 
     private void loadAllQuestions() {
         questionsItems = new ArrayList<>();
-        String jsonquiz = loadJsonFromAsset("formulasTest.json");
+        String jsonquiz = loadJsonFromAsset("formulas.json");
         //Log.d("TAG1", jsonquiz);
         try {
             JSONObject jsonObject = new JSONObject(jsonquiz);
-            JSONArray questions = jsonObject.getJSONArray("Abb_multipl_formulas");
+            JSONObject structure = jsonObject.getJSONObject("formulas");
+            JSONArray questions = structure.getJSONArray("Abb_multipl_formulas");
+            Log.d("TAG1","structure: "+structure+"\nquestions: " +  String.valueOf(questions));
             for (int i = 0; i < questions.length(); i++) {
                 JSONObject question = questions.getJSONObject(i);
 
@@ -252,6 +254,7 @@ public class TrainActivity extends AppCompatActivity {
             }
         } catch (JSONException e) {
             e.printStackTrace();
+            Log.d("TAG1","error: "+e);
         }
     }
 

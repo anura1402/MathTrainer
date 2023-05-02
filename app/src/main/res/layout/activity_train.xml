@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TrainActivity">
+
+    <include
+        android:id="@+id/toolbar2"
+        layout="@layout/app_toolbar"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/formula1" />
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/formula1"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            app:engine="MathJax"
+            app:layout_constraintBottom_toTopOf="@+id/cardViewAnswer1"
+            app:layout_constraintTop_toBottomOf="@+id/textQuestion" />
+
+        <FrameLayout
+            android:id="@+id/cardViewAnswer1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/border">
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formulaAnswer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginStart="5dp"
+                app:engine="MathJax" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cardViewAnswer2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/border">
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formulaAnswer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginStart="5dp"
+                app:engine="MathJax" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cardViewAnswer3"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/border">
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formulaAnswer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginStart="5dp"
+                app:engine="MathJax" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cardViewAnswer4"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/border">
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formulaAnswer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginStart="5dp"
+                app:engine="MathJax" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/buttonCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_trainer"
+            android:fontFamily="@font/main_text2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Проверить"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/formula_sub_of_cub" />
+
+    </LinearLayout>
+</LinearLayout>

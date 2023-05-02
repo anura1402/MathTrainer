@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -17,6 +18,8 @@ import java.util.Objects;
 public class Jump_trainer extends AppCompatActivity {
     private Bundle extras;
     private Class parentClass;
+    private Button button;
+    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,13 +34,24 @@ public class Jump_trainer extends AppCompatActivity {
         extras = getIntent().getExtras();
         parentClass = (Class<Activity>)extras.getSerializable("EXTRA_NEXT_ACTIVITY_CLASS");
         RadioGroup radioGroup = findViewById(R.id.radio_group);
+        button = findViewById(R.id.button2);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton radioButton = findViewById(checkedId);
                 radioButton.getText().toString();
-                TextView tv = findViewById(R.id.textView13);
-                tv.setText(radioButton.getText().toString());
+                if (radioButton.getText().toString().equals("Легкая")){
+                    button.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            intent = new Intent(Jump_trainer.this, TrainActivity.class);
+                            intent.putExtra("EXTRA_NEXT_ACTIVITY_CLASS", parentClass);
+                            startActivity(intent);
+                        }
+                    });
+                }
+                //TextView tv = findViewById(R.id.textView13);
+                //tv.setText(radioButton.getText().toString());
             }
         });
 

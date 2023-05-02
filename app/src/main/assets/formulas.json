@@ -1,0 +1,122 @@
+{
+  "formulas": [
+    {
+      "Abb_multipl_formulas": [
+        {
+          "question": "Easy Questions Answer A",
+          "formula": "Easy Questions Answer A",
+          "answer1": "A) A",
+          "answer2": "B) B",
+          "answer3": "C) C",
+          "answer4": "D) D",
+          "correct": "A) A"
+        },
+        {
+          "question": "Easy Questions Answer B",
+          "formula": "Easy Questions Answer A",
+          "answer1": "A) A",
+          "answer2": "B) B",
+          "answer3": "C) C",
+          "answer4": "D) D",
+          "correct": "B) B"
+        },
+        {
+          "question": "Easy Questions Answer C",
+          "formula": "Easy Questions Answer A",
+          "answer1": "A) A",
+          "answer2": "B) B",
+          "answer3": "C) C",
+          "answer4": "D) D",
+          "correct": "C) C"
+        },
+        {
+          "question": "Easy Questions Answer D",
+          "formula": "Easy Questions Answer A",
+          "answer1": "A) A",
+          "answer2": "B) B",
+          "answer3": "C) C",
+          "answer4": "D) D",
+          "correct": "D) D"
+        },
+        {
+          "question": "Easy Questions Answer E",
+          "formula": "Easy Questions Answer A",
+          "answer1": "A) A",
+          "answer2": "B) B",
+          "answer3": "C) C",
+          "answer4": "D) D",
+          "correct": "A) A"
+        },
+        {
+          "question": "Easy Questions Answer F",
+          "formula": "Easy Questions Answer A",
+          "answer1": "A) A",
+          "answer2": "B) B",
+          "answer3": "C) C",
+          "answer4": "D) D",
+          "correct": "B) B"
+        },
+        {
+          "question": "Easy Questions Answer G",
+          "formula": "Easy Questions Answer A",
+          "answer1": "A) A",
+          "answer2": "B) B",
+          "answer3": "C) C",
+          "answer4": "D) D",
+          "correct": "C) C"
+        },
+        {
+          "question": "Easy Questions Answer H",
+          "formula": "Easy Questions Answer A",
+          "answer1": "A) A",
+          "answer2": "B) B",
+          "answer3": "C) C",
+          "answer4": "D) D",
+          "correct": "D) D"
+        }
+      ],
+      "Geometry_figures": [
+        {
+          "question": "Easy Questions Answer A",
+          "formula": "Easy Questions Answer A",
+          "answer1": "A) A",
+          "answer2": "B) B",
+          "answer3": "C) C",
+          "answer4": "D) D",
+          "correct": "A) A"
+        },
+        {
+          "question": "Easy Questions Answer B",
+          "formula": "Easy Questions Answer A",
+          "answer1": "A) A",
+          "answer2": "B) B",
+          "answer3": "C) C",
+          "answer4": "D) D",
+          "correct": "B) B"
+        }
+      ],
+      "Rad_to_Degrees": [
+        {
+          "question": "Easy Questions Answer A",
+          "formula": "Easy Questions Answer A",
+          "answer1": "A) A",
+          "answer2": "B) B",
+          "answer3": "C) C",
+          "answer4": "D) D",
+          "correct": "A) A"
+        }
+      ],
+      "StereometriaSquares": [
+        {
+          "question": "Easy Questions Answer A",
+          "formula": "Easy Questions Answer A",
+          "answer1": "A) A",
+          "answer2": "B) B",
+          "answer3": "C) C",
+          "answer4": "D) D",
+          "correct": "A) A"
+        }
+      ]
+    }
+  ]
+}

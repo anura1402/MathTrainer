@@ -73,11 +73,7 @@
                         android:textSize="17sp" />
 
                 </RadioGroup>
-                <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
+
             </LinearLayout>
         </FrameLayout>
 

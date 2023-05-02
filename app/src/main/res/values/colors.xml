@@ -10,4 +10,8 @@
     <color name="main_text_color">#353737</color>
     <color name="main_theme">#D9F4F4</color>
     <color name="title_text">#575555</color>
+    <color name="default_answer_background">#FFFFFFFF</color>
+    <color name="selected_answer_background">#A5E8D3</color>
+    <color name="green">#CFF3CE</color>
+    <color name="red">#F1B6B2</color>
 </resources>

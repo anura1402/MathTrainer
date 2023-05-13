@@ -41,6 +41,6 @@
         <item name="spinBars">true</item>
         <item name="color">@color/main_text_color</item>
     </style>
-
+    
 
 </resources>

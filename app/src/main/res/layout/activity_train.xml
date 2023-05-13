@@ -13,10 +13,10 @@
         layout="@layout/app_toolbar"
         app:titleTextAppearance="@style/Toolbar.TitleText" />
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        >
 
 
         <TextView
@@ -24,16 +24,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
-            app:layout_constraintBottom_toTopOf="@+id/formula1" />
+            app:layout_constraintBottom_toTopOf="@+id/formula1"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/main_text2"
+            android:textSize="25sp"
+            android:textColor="@color/main_text_color"
+            android:layout_marginStart="10dp"/>
 
         <io.github.kexanie.library.MathView
             android:id="@+id/formula1"
-            android:layout_width="230dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
+            android:layout_marginStart="10dp"
             app:engine="MathJax"
             app:layout_constraintBottom_toTopOf="@+id/cardViewAnswer1"
-            app:layout_constraintTop_toBottomOf="@+id/textQuestion" />
+            app:layout_constraintTop_toBottomOf="@+id/textQuestion"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textQuestion"
+            android:textSize = "40sp"
+            />
 
         <FrameLayout
             android:id="@+id/cardViewAnswer1"
@@ -43,7 +53,9 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="10dp"
-            android:background="@drawable/border">
+            android:background="@drawable/border"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/formula1">
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/formulaAnswer1"
@@ -62,7 +74,9 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="10dp"
-            android:background="@drawable/border">
+            android:background="@drawable/border"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/cardViewAnswer1">
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/formulaAnswer2"
@@ -81,7 +95,9 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="10dp"
-            android:background="@drawable/border">
+            android:background="@drawable/border"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/cardViewAnswer2">
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/formulaAnswer3"
@@ -100,7 +116,9 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="10dp"
-            android:background="@drawable/border">
+            android:background="@drawable/border"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/cardViewAnswer3">
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/formulaAnswer4"
@@ -124,10 +142,10 @@
             android:fontFamily="@font/main_text2"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Проверить"
+            android:text="Далее"
             android:textColor="#ffffff"
             android:textSize="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/formula_sub_of_cub" />
+            android:layout_alignParentBottom="true"/>
 
-    </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>

@@ -3,76 +3,68 @@
     {
       "Abb_multipl_formulas": [
         {
-          "question": "Easy Questions Answer A",
-          "formula": "Easy Questions Answer A",
-          "answer1": "A) A",
-          "answer2": "B) B",
-          "answer3": "C) C",
-          "answer4": "D) D",
-          "correct": "A) A"
+          "question": "Разность кубов:",
+          "formula": "\\(x^3-y^3= ?\\) ",
+          "answer1": "$$(x-y)(x^2+xy+y^2)$$",
+          "answer2": "$$(x-y)(x^2-2xy-y^2)$$",
+          "answer3": "$$(x-y)(x^2-xy-y^2)$$",
+          "answer4": "$$(x+y)(x^2-2xy+y^2)$$",
+          "correct": "$$(x-y)(x^2+xy+y^2)$$"
         },
         {
-          "question": "Easy Questions Answer B",
-          "formula": "Easy Questions Answer A",
-          "answer1": "A) A",
-          "answer2": "B) B",
-          "answer3": "C) C",
-          "answer4": "D) D",
-          "correct": "B) B"
+          "question": "Сумма кубов:",
+          "formula": "\\(x^3+y^3= ?\\) ",
+          "answer1": "$$(x+y)(x^2-xy+y^2)$$",
+          "answer2": "$$(x+y)(x^2+2xy+y^2)$$",
+          "answer3": "$$(x+y)(x^2+xy+y^2)$$",
+          "answer4": "$$(x+y)(x^2-2xy+y^2)$$",
+          "correct": "$$(x+y)(x^2-xy+y^2)$$"
         },
         {
-          "question": "Easy Questions Answer C",
-          "formula": "Easy Questions Answer A",
-          "answer1": "A) A",
-          "answer2": "B) B",
-          "answer3": "C) C",
-          "answer4": "D) D",
-          "correct": "C) C"
+          "question": "Квадрат суммы:",
+          "formula": "\\((x+y)^2= ?\\) ",
+          "answer1": "$$x^2+xy+y^2$$",
+          "answer2": "$$x^2+y^2$$",
+          "answer3": "$$x^2-2xy+y^2$$",
+          "answer4": "$$x^2+2xy+y^2$$",
+          "correct": "$$x^2+2xy+y^2$$",
+
         },
         {
-          "question": "Easy Questions Answer D",
-          "formula": "Easy Questions Answer A",
-          "answer1": "A) A",
-          "answer2": "B) B",
-          "answer3": "C) C",
-          "answer4": "D) D",
-          "correct": "D) D"
+          "question": "Квадрат разности:",
+          "formula": "\\((x-y)^2= ?\\) ",
+          "answer1": "$$x^2-2xy+y^2$$",
+          "answer2": "$$x^2-y^2$$",
+          "answer3": "$$x^2-2xy-y^2$$",
+          "answer4": "$$x^2-xy+y^2$$",
+          "correct": "$$x^2-2xy+y^2$$"
         },
         {
-          "question": "Easy Questions Answer E",
-          "formula": "Easy Questions Answer A",
-          "answer1": "A) A",
-          "answer2": "B) B",
-          "answer3": "C) C",
-          "answer4": "D) D",
-          "correct": "A) A"
+          "question": "Разность квадратов:",
+          "formula": "\\(x^2-y^2= ?\\) ",
+          "answer1": "$$x^2-xy+y^2$$",
+          "answer2": "$$x^2-2xy-y^2$$",
+          "answer3": "$$(x+y)(x-y)$$",
+          "answer4": "$$(x-y)^2$$",
+          "correct": "$$(x+y)(x-y)$$"
         },
         {
-          "question": "Easy Questions Answer F",
-          "formula": "Easy Questions Answer A",
-          "answer1": "A) A",
-          "answer2": "B) B",
-          "answer3": "C) C",
-          "answer4": "D) D",
-          "correct": "B) B"
+          "question": "Куб суммы:",
+          "formula": "\\((x+y)^3= ?\\) ",
+          "answer1": "$$x^3+3x^2y+3xy^2+y^3$$",
+          "answer2": "$$x^3-3x^2y+3xy^2-y^3$$",
+          "answer3": "$$x^3+y^3$$",
+          "answer4": "$$x^3+3xy+y^3$$",
+          "correct": "$$x^3+3x^2y+3xy^2+y^3$$"
         },
         {
-          "question": "Easy Questions Answer G",
-          "formula": "Easy Questions Answer A",
-          "answer1": "A) A",
-          "answer2": "B) B",
-          "answer3": "C) C",
-          "answer4": "D) D",
-          "correct": "C) C"
-        },
-        {
-          "question": "Easy Questions Answer H",
-          "formula": "Easy Questions Answer A",
-          "answer1": "A) A",
-          "answer2": "B) B",
-          "answer3": "C) C",
-          "answer4": "D) D",
-          "correct": "D) D"
+          "question": "Куб разности:",
+          "formula": "\\(x^3-y^3= ?\\) ",
+          "answer1": "$$x^3-3x^2y+3xy^2-y^3$$",
+          "answer2": "$$x^3-3xy-y^3$$",
+          "answer3": "$$x^3-3x^2y+3xy^2-y^3$$",
+          "answer4": "$$x^3+3x^2y+3xy^2-y^3$$",
+          "correct": "$$x^3-3x^2y+3xy^2-y^3$$"
         }
       ],
       "Geometry_figures": [

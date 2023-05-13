@@ -22,6 +22,8 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
@@ -30,7 +32,7 @@ import io.github.kexanie.library.MathView;
 public class TrainActivity extends AppCompatActivity {
     private TextView questionTextView;
     private FrameLayout option1CardView, option2CardView, option3CardView, option4CardView;
-    MathView questionFormula, answer1, answer2, answer3, answer4;
+    private MathView questionFormula, answer1, answer2, answer3, answer4;
     private Button submitButton;
     List<CardView> cardViews = new ArrayList<>();
     List<Questions> questionsItems;
@@ -89,25 +91,31 @@ public class TrainActivity extends AppCompatActivity {
                     option1CardView.setBackgroundResource(R.color.red);
                     //answer1.setTextColor(getResources().getColor(R.color.white));
                 }
+                submitButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
 
-                if (currentQuestions < questionsItems.size() - 1) {
-                    Handler handler = new Handler();
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            currentQuestions++;
-                            setQuestionScreen(currentQuestions);
-                            option1CardView.setBackgroundResource(R.drawable.border);
-                            //option1CardView.setTextColor(getResources().getColor(R.color.text_secondery_color));
+                        if (currentQuestions < questionsItems.size() - 1) {
+                            Handler handler = new Handler();
+                            handler.postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    currentQuestions++;
+                                    setQuestionScreen(currentQuestions);
+                                    option1CardView.setBackgroundResource(R.drawable.border);
+                                    //option1CardView.setTextColor(getResources().getColor(R.color.text_secondery_color));
+                                }
+                            }, 500);
+                        } else {
+                            Intent intent = new Intent(TrainActivity.this, ResultActivity.class);
+                            intent.putExtra("correct", correct);
+                            intent.putExtra("wrong", wrong);
+                            startActivity(intent);
+                            finish();
                         }
-                    }, 500);
-                } else {
-                    Intent intent = new Intent(TrainActivity.this, ResultActivity.class);
-                    intent.putExtra("correct", correct);
-                    intent.putExtra("wrong", wrong);
-                    startActivity(intent);
-                    finish();
-                }
+
+                    }
+                });
             }
         });
         option2CardView.setOnClickListener(new View.OnClickListener() {
@@ -122,25 +130,30 @@ public class TrainActivity extends AppCompatActivity {
                     option2CardView.setBackgroundResource(R.color.red);
                     //option2CardView.setTextColor(getResources().getColor(R.color.white));
                 }
-
-                if (currentQuestions < questionsItems.size() - 1) {
-                    Handler handler = new Handler();
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            currentQuestions++;
-                            setQuestionScreen(currentQuestions);
-                            option2CardView.setBackgroundResource(R.drawable.border);
-                            // option2CardView.setTextColor(getResources().getColor(R.color.text_secondery_color));
+                submitButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (currentQuestions < questionsItems.size() - 1) {
+                            Handler handler = new Handler();
+                            handler.postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    currentQuestions++;
+                                    setQuestionScreen(currentQuestions);
+                                    option2CardView.setBackgroundResource(R.drawable.border);
+                                    // option2CardView.setTextColor(getResources().getColor(R.color.text_secondery_color));
+                                }
+                            }, 500);
+                        } else {
+                            Intent intent = new Intent(TrainActivity.this, ResultActivity.class);
+                            intent.putExtra("correct", correct);
+                            intent.putExtra("wrong", wrong);
+                            startActivity(intent);
+                            finish();
                         }
-                    }, 500);
-                } else {
-                    Intent intent = new Intent(TrainActivity.this, ResultActivity.class);
-                    intent.putExtra("correct", correct);
-                    intent.putExtra("wrong", wrong);
-                    startActivity(intent);
-                    finish();
-                }
+
+                    }
+                });
             }
         });
         option3CardView.setOnClickListener(new View.OnClickListener() {
@@ -155,25 +168,30 @@ public class TrainActivity extends AppCompatActivity {
                     option3CardView.setBackgroundResource(R.color.red);
                     //option3CardView.setTextColor(getResources().getColor(R.color.white));
                 }
-
-                if (currentQuestions < questionsItems.size() - 1) {
-                    Handler handler = new Handler();
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            currentQuestions++;
-                            setQuestionScreen(currentQuestions);
-                            option3CardView.setBackgroundResource(R.drawable.border);
-                            //option3CardView.setTextColor(getResources().getColor(R.color.text_secondery_color));
+                submitButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (currentQuestions < questionsItems.size() - 1) {
+                            Handler handler = new Handler();
+                            handler.postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    currentQuestions++;
+                                    setQuestionScreen(currentQuestions);
+                                    option3CardView.setBackgroundResource(R.drawable.border);
+                                    //option3CardView.setTextColor(getResources().getColor(R.color.text_secondery_color));
+                                }
+                            }, 500);
+                        } else {
+                            Intent intent = new Intent(TrainActivity.this, ResultActivity.class);
+                            intent.putExtra("correct", correct);
+                            intent.putExtra("wrong", wrong);
+                            startActivity(intent);
+                            finish();
                         }
-                    }, 500);
-                } else {
-                    Intent intent = new Intent(TrainActivity.this, ResultActivity.class);
-                    intent.putExtra("correct", correct);
-                    intent.putExtra("wrong", wrong);
-                    startActivity(intent);
-                    finish();
-                }
+
+                    }
+                });
             }
         });
         option4CardView.setOnClickListener(new View.OnClickListener() {
@@ -188,25 +206,30 @@ public class TrainActivity extends AppCompatActivity {
                     option4CardView.setBackgroundResource(R.color.red);
                     //option4CardView.setTextColor(getResources().getColor(R.color.white));
                 }
-
-                if (currentQuestions < questionsItems.size() - 1) {
-                    Handler handler = new Handler();
-                    handler.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            currentQuestions++;
-                            setQuestionScreen(currentQuestions);
-                            option4CardView.setBackgroundResource(R.drawable.border);
-                            // option4CardView.setTextColor(getResources().getColor(R.color.text_secondery_color));
+                submitButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (currentQuestions < questionsItems.size() - 1) {
+                            Handler handler = new Handler();
+                            handler.postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    currentQuestions++;
+                                    setQuestionScreen(currentQuestions);
+                                    option4CardView.setBackgroundResource(R.drawable.border);
+                                    // option4CardView.setTextColor(getResources().getColor(R.color.text_secondery_color));
+                                }
+                            }, 500);
+                        } else {
+                            Intent intent = new Intent(TrainActivity.this, ResultActivity.class);
+                            intent.putExtra("correct", correct);
+                            intent.putExtra("wrong", wrong);
+                            startActivity(intent);
+                            finish();
                         }
-                    }, 500);
-                } else {
-                    Intent intent = new Intent(TrainActivity.this, ResultActivity.class);
-                    intent.putExtra("correct", correct);
-                    intent.putExtra("wrong", wrong);
-                    startActivity(intent);
-                    finish();
-                }
+
+                    }
+                });
             }
         });
 
@@ -237,7 +260,8 @@ public class TrainActivity extends AppCompatActivity {
             JSONObject jsonObject = new JSONObject(jsonquiz);
             JSONObject structure = jsonObject.getJSONObject("formulas");
             JSONArray questions = structure.getJSONArray("Abb_multipl_formulas");
-            Log.d("TAG1","structure: "+structure+"\nquestions: " +  String.valueOf(questions));
+            Log.d("TAG1", "structure: " + structure + "\nquestions: " + String.valueOf(questions));
+
             for (int i = 0; i < questions.length(); i++) {
                 JSONObject question = questions.getJSONObject(i);
 
@@ -252,9 +276,10 @@ public class TrainActivity extends AppCompatActivity {
                 this.questionsItems.add(new Questions(questionsString, formulaString, answer1String, answer2String, answer3String, answer4String, correctString));
                 //Log.d("TAG2", questionsItems.toString());
             }
+            Collections.shuffle(questionsItems);
         } catch (JSONException e) {
             e.printStackTrace();
-            Log.d("TAG1","error: "+e);
+            Log.d("TAG1", "error: " + e);
         }
     }
 

@@ -27,8 +27,7 @@
           "answer2": "$$x^2+y^2$$",
           "answer3": "$$x^2-2xy+y^2$$",
           "answer4": "$$x^2+2xy+y^2$$",
-          "correct": "$$x^2+2xy+y^2$$",
-
+          "correct": "$$x^2+2xy+y^2$$"
         },
         {
           "question": "Квадрат разности:",

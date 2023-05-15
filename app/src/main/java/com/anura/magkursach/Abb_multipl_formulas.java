@@ -39,6 +39,7 @@ public class Abb_multipl_formulas extends AppCompatActivity {
             public void onClick(View v) {
                 intent = new Intent(Abb_multipl_formulas.this, Jump_trainer.class);
                 intent.putExtra("EXTRA_NEXT_ACTIVITY_CLASS", Abb_multipl_formulas.class);
+                intent.putExtra("activity_name", "Abb_multipl_formulas");
                 startActivity(intent);
             }
         });

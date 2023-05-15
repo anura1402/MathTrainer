@@ -31,6 +31,7 @@ public class Rad_to_Degrees extends AppCompatActivity {
             public void onClick(View v) {
                 intent = new Intent(Rad_to_Degrees.this, Jump_trainer.class);
                 intent.putExtra("EXTRA_NEXT_ACTIVITY_CLASS", Rad_to_Degrees.class);
+                intent.putExtra("activity_name", "Rad_to_Degrees");
                 startActivity(intent);
             }
         });

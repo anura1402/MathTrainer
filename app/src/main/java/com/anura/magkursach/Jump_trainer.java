@@ -20,6 +20,7 @@ public class Jump_trainer extends AppCompatActivity {
     private Class parentClass;
     private Button button;
     Intent intent;
+    String activityName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +34,7 @@ public class Jump_trainer extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         extras = getIntent().getExtras();
         parentClass = (Class<Activity>)extras.getSerializable("EXTRA_NEXT_ACTIVITY_CLASS");
+        activityName = getIntent().getStringExtra("activity_name");
         RadioGroup radioGroup = findViewById(R.id.radio_group);
         button = findViewById(R.id.button2);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -46,6 +48,7 @@ public class Jump_trainer extends AppCompatActivity {
                         public void onClick(View v) {
                             intent = new Intent(Jump_trainer.this, TrainActivity.class);
                             intent.putExtra("EXTRA_NEXT_ACTIVITY_CLASS", parentClass);
+                            intent.putExtra("activity_name", activityName);
                             startActivity(intent);
                         }
                     });

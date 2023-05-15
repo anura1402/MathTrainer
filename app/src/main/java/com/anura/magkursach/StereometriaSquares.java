@@ -33,6 +33,7 @@ public class StereometriaSquares extends AppCompatActivity {
             public void onClick(View v) {
                 intent = new Intent(StereometriaSquares.this, Jump_trainer.class);
                 intent.putExtra("EXTRA_NEXT_ACTIVITY_CLASS", StereometriaSquares.class);
+                intent.putExtra("activity_name", "StereometriaSquares");
                 startActivity(intent);
             }
         });

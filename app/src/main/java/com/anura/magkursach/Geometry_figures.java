@@ -33,6 +33,7 @@ public class Geometry_figures extends AppCompatActivity {
             public void onClick(View v) {
                 intent = new Intent(Geometry_figures.this, Jump_trainer.class);
                 intent.putExtra("EXTRA_NEXT_ACTIVITY_CLASS", Geometry_figures.class);
+                intent.putExtra("activity_name", "Geometry_figures");
                 startActivity(intent);
             }
         });
@@ -43,6 +44,7 @@ public class Geometry_figures extends AppCompatActivity {
             case android.R.id.home:
                 // Действие при нажатии кнопки назад на toolbar
                 Intent intent = new Intent(this, GeometryFragment.class);
+
                 startActivity(intent);
                 return true;
             default:

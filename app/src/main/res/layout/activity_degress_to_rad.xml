@@ -16,7 +16,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".trigonometry.Rad_to_Degrees">
+        tools:context=".trigonometry.Degress_to_Rad">
 
 
         <LinearLayout
@@ -42,97 +42,105 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/main_theme" />
 
                 <io.github.kexanie.library.MathView
                     android:id="@+id/formula_pi6"
-                    android:layout_width="80dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     app:engine="KaTeX"
                     app:layout_constraintBottom_toTopOf="@+id/formula_pi4"
                     app:layout_constraintTop_toBottomOf="@+id/textRad1"
-                    app:text="$$\\frac{\\pi}{6}=30^{\\circ}$$" />
+                    app:text="\\(30^{\\circ}=\\frac{\\pi}{6}\\)" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/main_theme" />
 
                 <io.github.kexanie.library.MathView
                     android:id="@+id/formula_pi4"
-                    android:layout_width="80dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_pi3"
                     app:layout_constraintTop_toBottomOf="@+id/formula_pi6"
-                    app:text="$$\\frac{\\pi}{4}=45^{\\circ}$$" />
+                    app:text="\\(45^{\\circ}=\\frac{\\pi}{4}\\)" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/main_theme" />
 
                 <io.github.kexanie.library.MathView
                     android:id="@+id/formula_pi3"
-                    android:layout_width="80dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_pi2"
                     app:layout_constraintTop_toBottomOf="@+id/formula_pi4"
-                    app:text="$$\\frac{\\pi}{3}=60^{\\circ}$$" />
+                    app:text="\\(60^{\\circ}=\\frac{\\pi}{3}\\)" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/main_theme" />
 
                 <io.github.kexanie.library.MathView
                     android:id="@+id/formula_pi2"
-                    android:layout_width="80dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/textRad2"
                     app:layout_constraintTop_toBottomOf="@+id/formula_pi3"
-                    app:text="$$\\frac{\\pi}{2} = 90^{\\circ}$$" />
+                    app:text="\\( 90^{\\circ}=\\frac{\\pi}{2}\\)" />
             </LinearLayout>
 
             <TextView
@@ -153,99 +161,106 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/main_theme" />
 
                 <io.github.kexanie.library.MathView
                     android:id="@+id/formula_2pi3"
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_3pi4"
                     app:layout_constraintTop_toBottomOf="@+id/textRad2"
-                    app:text="$$\\frac{2\\pi}{3}=120^{\\circ}$$" />
+                    app:text="\\(120^{\\circ}=\\frac{2\\pi}{3}\\)" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/main_theme" />
 
                 <io.github.kexanie.library.MathView
                     android:id="@+id/formula_3pi4"
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_5pi6"
                     app:layout_constraintTop_toBottomOf="@+id/formula_2pi3"
-                    app:text="$$\\frac{3\\pi}{4}=135^{\\circ}$$" />
+                    app:text="\\(135^{\\circ}=\\frac{3\\pi}{4}\\)" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/main_theme" />
 
                 <io.github.kexanie.library.MathView
                     android:id="@+id/formula_5pi6"
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_pi"
                     app:layout_constraintTop_toBottomOf="@+id/formula_3pi4"
-                    app:text="$$\\frac{5\\pi}{6}=150^{\\circ}$$" />
+                    app:text="\\(150^{\\circ}=\\frac{5\\pi}{6}\\)" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
-                >
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/main_theme" />
 
                 <io.github.kexanie.library.MathView
                     android:id="@+id/formula_pi"
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="6dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/textRad3"
                     app:layout_constraintTop_toBottomOf="@+id/formula_5pi6"
-                    app:text="$$\\pi = 180^{\\circ}$$" />
+                    app:text="\\(180^{\\circ}=\\pi\\)" />
             </LinearLayout>
 
             <TextView
@@ -266,97 +281,105 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/main_theme" />
 
                 <io.github.kexanie.library.MathView
                     android:id="@+id/formula_7pi6"
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_5pi4"
                     app:layout_constraintTop_toBottomOf="@+id/textRad3"
-                    app:text="$$\\frac{7\\pi}{6}=210^{\\circ}$$" />
+                    app:text="\\(210^{\\circ}=\\frac{7\\pi}{6}\\)" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/main_theme" />
 
                 <io.github.kexanie.library.MathView
                     android:id="@+id/formula_5pi4"
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_4pi3"
                     app:layout_constraintTop_toBottomOf="@+id/formula_7pi6"
-                    app:text="$$\\frac{5\\pi}{4}=225^{\\circ}$$" />
+                    app:text="\\(225^{\\circ}=\\frac{5\\pi}{4}\\)" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/main_theme" />
 
                 <io.github.kexanie.library.MathView
                     android:id="@+id/formula_4pi3"
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_3pi2"
                     app:layout_constraintTop_toBottomOf="@+id/formula_5pi4"
-                    app:text="$$\\frac{4\\pi}{3}=240^{\\circ}$$" />
+                    app:text="\\(240^{\\circ}=\\frac{4\\pi}{3}\\)" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/main_theme" />
 
                 <io.github.kexanie.library.MathView
                     android:id="@+id/formula_3pi2"
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/textRad4"
                     app:layout_constraintTop_toBottomOf="@+id/formula_5pi6"
-                    app:text="$$\\frac{3\\pi}{2} = 270^{\\circ}$$" />
+                    app:text="\\(270^{\\circ}=\\frac{3\\pi}{2}\\)" />
             </LinearLayout>
 
             <TextView
@@ -377,113 +400,122 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/main_theme" />
 
                 <io.github.kexanie.library.MathView
                     android:id="@+id/formula_5pi3"
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_7pi4"
                     app:layout_constraintTop_toBottomOf="@+id/textRad3"
-                    app:text="$$\\frac{7\\pi}{6}=210^{\\circ}$$" />
+                    app:text="\\(210^{\\circ}=\\frac{7\\pi}{6}\\)" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/main_theme" />
 
                 <io.github.kexanie.library.MathView
                     android:id="@+id/formula_7pi4"
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_11pi6"
                     app:layout_constraintTop_toBottomOf="@+id/formula_5pi3"
-                    app:text="$$\\frac{5\\pi}{4}=225^{\\circ}$$" />
+                    app:text="\\(225^{\\circ}=\\frac{5\\pi}{4}\\)" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/main_theme" />
 
                 <io.github.kexanie.library.MathView
                     android:id="@+id/formula_11pi6"
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_2pi"
                     app:layout_constraintTop_toBottomOf="@+id/formula_7pi4"
-                    app:text="$$\\frac{4\\pi}{3}=240^{\\circ}$$" />
+                    app:text="\\(240^{\\circ}=\\frac{4\\pi}{3}\\)" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp">
+                android:orientation="horizontal">
 
                 <View
                     android:layout_width="4dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
                     android:background="@color/main_theme" />
 
                 <io.github.kexanie.library.MathView
                     android:id="@+id/formula_2pi"
-                    android:layout_width="90dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     app:engine="MathJax"
                     app:layout_constraintTop_toBottomOf="@+id/formula_11pi6"
-                    app:text="$$\\frac{3\\pi}{2} = 270^{\\circ}$$" />
+                    app:text="\\(270^{\\circ}=\\frac{3\\pi}{2}\\)" />
             </LinearLayout>
+
             <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Начать тренировку"
-                android:fontFamily="@font/main_text2"
-                android:textSize="20dp"
-                android:gravity="center"
-                android:padding="10dp"
                 android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp"
-                app:layout_constraintTop_toBottomOf="@+id/formula_2pi"
-                android:layout_marginTop="10dp"
+                android:background="@drawable/button_trainer"
+                android:fontFamily="@font/main_text2"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Начать тренировку"
                 android:textColor="#ffffff"
-                android:background="@drawable/button_trainer"/>
+                android:textSize="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/formula_2pi" />
         </LinearLayout>
 
     </ScrollView>

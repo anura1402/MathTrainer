@@ -1,4 +1,4 @@
-package com.anura.magkursach;
+package com.anura.magkursach.training;
 
 public class Questions {
     private String question;

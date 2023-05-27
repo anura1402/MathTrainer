@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar2"
+            layout="@layout/app_toolbar"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".algebra.Progressions">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/main_text2"
+                    android:gravity="start"
+                    android:text="Арифмитическая прогрессиия"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/main_theme" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_square1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:engine="MathJax"
+                        app:layout_constraintBottom_toTopOf="@+id/formula_square2"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4"
+                        app:text="\\(a_n=a_1+(n-1)d\\)" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/main_theme" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_square2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:engine="MathJax"
+                        app:layout_constraintBottom_toTopOf="@+id/formula_square3"
+                        app:layout_constraintTop_toBottomOf="@+id/formula_square1"
+                        app:text="\\(d=a_{n+1}-a_n\\)" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/main_theme" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_square3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:engine="MathJax"
+                        app:layout_constraintBottom_toTopOf="@+id/formula_square4"
+                        app:layout_constraintTop_toBottomOf="@+id/formula_square2"
+                        app:text="\\(d=\\frac{a_n-a_1}{n-1}\\)" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/main_theme" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_square4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:engine="MathJax"
+                        app:layout_constraintBottom_toTopOf="@+id/formula_square5"
+                        app:layout_constraintTop_toBottomOf="@+id/formula_square3"
+                        app:text="\\(a_n=\\frac{a_{n+1}+a_{n-1}}{2}\\)" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/main_theme" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_square5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:engine="MathJax"
+                        app:layout_constraintBottom_toTopOf="@+id/textView8"
+                        app:layout_constraintTop_toBottomOf="@+id/formula_square4"
+                        app:text="\\(S_n=\\frac{a_1+a_n}{2}\\cdot n\\)" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/main_text2"
+                    android:gravity="start"
+                    android:layout_marginBottom="15dp"
+                    android:text="Геометрическая прогрессия"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_sub_of_squares" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/main_theme" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_square6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:engine="MathJax"
+                        app:layout_constraintBottom_toTopOf="@+id/formula_square7"
+                        app:layout_constraintTop_toBottomOf="@+id/textView8"
+                        app:text="\\(b_n=b_1 \\cdot q^{n-1}\\)" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/main_theme" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_square7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:engine="MathJax"
+                        app:layout_constraintBottom_toTopOf="@+id/formula_square8"
+                        app:layout_constraintTop_toBottomOf="@+id/formula_square6"
+                        app:text="\\(b_n = \\sqrt{b_{n-1}\\cdot b_{n+1}}\\)" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/main_theme" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_square8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:engine="MathJax"
+                        app:layout_constraintBottom_toTopOf="@+id/formula_square9"
+                        app:layout_constraintTop_toBottomOf="@+id/formula_square7"
+                        app:text="\\(S_n=\\frac{b_1(q^n-1)}{q-1}\\)" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/main_theme" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_square9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:engine="MathJax"
+                        app:layout_constraintBottom_toTopOf="@+id/formula_square10"
+                        app:layout_constraintTop_toBottomOf="@+id/formula_square8"
+                        app:text="\\(S_{inf}=\\frac{b_1}{1-q}\\)" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_trainer"
+                    android:fontFamily="@font/main_text2"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Начать тренировку"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_sub_of_cub" />
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>

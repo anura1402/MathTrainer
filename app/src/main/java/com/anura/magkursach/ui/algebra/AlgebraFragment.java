@@ -1,20 +1,22 @@
 package com.anura.magkursach.ui.algebra;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
-import com.anura.magkursach.Abb_multipl_formulas;
-import com.anura.magkursach.R;
-import com.anura.magkursach.Rad_to_Degrees;
+import com.anura.magkursach.algebra.Abb_multipl_formulas;
+import com.anura.magkursach.algebra.Degrees_and_etc;
+import com.anura.magkursach.algebra.Derivatives;
+import com.anura.magkursach.algebra.Progressions;
+import com.anura.magkursach.algebra.Square_table;
+import com.anura.magkursach.trigonometry.Degress_to_Rad;
+import com.anura.magkursach.trigonometry.Rad_to_Degrees;
 import com.anura.magkursach.databinding.FragmentAlgebraBinding;
 
 public class AlgebraFragment extends Fragment {
@@ -67,10 +69,46 @@ public class AlgebraFragment extends Fragment {
                 startActivity(intent);
             }
         });
+        card2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getActivity(), Square_table.class);
+                startActivity(intent);
+            }
+        });
+        card3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getActivity(), Degrees_and_etc.class);
+                startActivity(intent);
+            }
+        });
+        card4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getActivity(), Progressions.class);
+                startActivity(intent);
+            }
+        });
+        card5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getActivity(), Derivatives.class);
+                startActivity(intent);
+            }
+        });
+
         card6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 intent = new Intent(getActivity(),Rad_to_Degrees.class);
+                startActivity(intent);
+            }
+        });
+        card7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getActivity(), Degress_to_Rad.class);
                 startActivity(intent);
             }
         });

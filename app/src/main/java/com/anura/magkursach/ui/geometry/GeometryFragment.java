@@ -10,8 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
-import com.anura.magkursach.Geometry_figures;
-import com.anura.magkursach.StereometriaSquares;
+import com.anura.magkursach.planimetry.Geometry_figures;
+import com.anura.magkursach.stereometry.StereometriaSquares;
 import com.anura.magkursach.databinding.FragmentGeometryBinding;
 
 public class GeometryFragment extends Fragment {

@@ -1,4 +1,4 @@
-package com.anura.magkursach;
+package com.anura.magkursach.stereometry;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -9,6 +9,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.anura.magkursach.R;
+import com.anura.magkursach.training.Jump_trainer;
 import com.anura.magkursach.ui.geometry.GeometryFragment;
 
 import java.util.Objects;

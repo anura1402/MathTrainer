@@ -13,31 +13,51 @@
         android:theme="@style/Theme.MagKursach"
         tools:targetApi="31">
         <activity
-            android:name=".TrainActivity"
+            android:name=".trigonometry.Degress_to_Rad"
             android:exported="false"
             android:theme="@style/HelpToolbarTheme"/>
         <activity
-            android:name=".ResultActivity"
-            android:exported="false"
-            android:theme="@style/HelpToolbarTheme"/>
-        <activity
-            android:name=".Jump_trainer"
+            android:name=".algebra.Derivatives"
             android:exported="false"
             android:theme="@style/HelpToolbarTheme" />
         <activity
-            android:name=".StereometriaSquares"
+            android:name=".algebra.Progressions"
             android:exported="false"
             android:theme="@style/HelpToolbarTheme" />
         <activity
-            android:name=".Rad_to_Degrees"
+            android:name=".algebra.Degrees_and_etc"
             android:exported="false"
             android:theme="@style/HelpToolbarTheme" />
         <activity
-            android:name=".Abb_multipl_formulas"
+            android:name=".algebra.Square_table"
             android:exported="false"
             android:theme="@style/HelpToolbarTheme" />
         <activity
-            android:name=".Geometry_figures"
+            android:name=".training.TrainActivity"
+            android:exported="false"
+            android:theme="@style/HelpToolbarTheme" />
+        <activity
+            android:name=".training.ResultActivity"
+            android:exported="false"
+            android:theme="@style/HelpToolbarTheme" />
+        <activity
+            android:name=".training.Jump_trainer"
+            android:exported="false"
+            android:theme="@style/HelpToolbarTheme" />
+        <activity
+            android:name=".stereometry.StereometriaSquares"
+            android:exported="false"
+            android:theme="@style/HelpToolbarTheme" />
+        <activity
+            android:name=".trigonometry.Rad_to_Degrees"
+            android:exported="false"
+            android:theme="@style/HelpToolbarTheme" />
+        <activity
+            android:name=".algebra.Abb_multipl_formulas"
+            android:exported="false"
+            android:theme="@style/HelpToolbarTheme" />
+        <activity
+            android:name=".planimetry.Geometry_figures"
             android:exported="false"
             android:theme="@style/HelpToolbarTheme" />
         <activity

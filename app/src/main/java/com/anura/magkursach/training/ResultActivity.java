@@ -1,16 +1,17 @@
-package com.anura.magkursach;
+package com.anura.magkursach.training;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
+import com.anura.magkursach.MainActivity;
+import com.anura.magkursach.R;
 
 import java.util.Objects;
 

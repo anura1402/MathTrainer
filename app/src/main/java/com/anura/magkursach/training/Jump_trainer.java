@@ -1,4 +1,4 @@
-package com.anura.magkursach;
+package com.anura.magkursach.training;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -11,7 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
+
+import com.anura.magkursach.R;
 
 import java.util.Objects;
 

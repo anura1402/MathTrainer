@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar2"
+        layout="@layout/app_toolbar"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <ScrollView
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".trigonometry.Formulas">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textRad1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Основное тригонометрическое тождество"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_pi6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_pi6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="KaTeX"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_pi4"
+                    app:layout_constraintTop_toBottomOf="@+id/textRad1"
+                    app:text="\\(1=sin^2x +cos^2x\\)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_pi4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_pi3"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_pi6"
+                    app:text="\\(\\frac{1}{cos^2x}=tg^2x+1\\)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_pi3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_pi2"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_pi4"
+                    app:text="\\(\\frac{1}{sin^2x}=ctg^2x+1\\)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_pi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_pi22"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_pi3"
+                    app:text="\\(tgx \\cdot ctgx = 1\\)" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textRad2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Формулы сложения"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_2pi3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_pi2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_2pi3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_3pi4"
+                    app:layout_constraintTop_toBottomOf="@+id/textRad2"
+                    app:text="\\(sin(x+y)=sinxcosy+cosxsiny\\)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_3pi4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_5pi6"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_2pi3"
+                    app:text="\\(sin(x-y)=sinxcosy-cosxsiny\\)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_5pi6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_pi"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_3pi4"
+                    app:text="\\(cos(x+y)=cosxcosy+sinxsiny\\)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_pi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textRad3"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_5pi6"
+                    app:text="\\(cos(x-y)=cosxcosy-sinxsiny\\)" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_sum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_sum2"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_5pi6"
+                    app:text="\\(tg(x+y)=\\frac{tgx+tgy}{1-tgxtgy}\\)" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_sum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textRad3"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_sum1"
+                    app:text="\\(tg(x-y)=\\frac{tgx-tgy}{1-tgxtgy}\\)" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textRad3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Формулы двойного угла"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_7pi6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_pi" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_7pi6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_5pi4"
+                    app:layout_constraintTop_toBottomOf="@+id/textRad3"
+                    app:text="\\(sin2x=2sinxcosx\\)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_5pi4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_4pi3"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_7pi6"
+                    app:text="\\(cos2x=cos^2x-sin^2x\\)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_4pi3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textRad4"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_5pi4"
+                    app:text="\\(tg2x=\\frac{2tgx}{1-tg^2x}\\)" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textRad4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Формулы половинного угла"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_5pi3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_3pi2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_5pi3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_7pi4"
+                    app:layout_constraintTop_toBottomOf="@+id/textRad3"
+                    app:text="\\(sin^2\\frac{x}{2}=\\frac{1-cosx}{2}\\)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_7pi4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_11pi6"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_5pi3"
+                    app:text="\\(cos^2\\frac{x}{2}=\\frac{1+cosx}{2}\\)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_11pi6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textRad5"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_7pi4"
+                    app:text="\\(tg^2\\frac{x}{2}=\\frac{1-cosx}{1+cosx}\\)" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textRad5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Формулы понижения степени"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_2pi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_11pi6" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_2pi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textTg1"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_11pi6"
+                    app:text="\\(sin^2x=\\frac{1-cos2x}{2}\\)" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_tg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textTg1"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_2pi"
+                    app:text="\\(cos^2x=\\frac{1+cos2x}{2}\\)" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textTg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Формулы суммы и разности тригонометрических функций"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_tg2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_tg1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_tg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_tg3"
+                    app:layout_constraintTop_toBottomOf="@+id/textTg1"
+                    app:text="\\(sinx+siny=2sin(\\frac{x+y}{2})cos(\\frac{x-y}{2})\\)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_tg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_tg4"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_tg2"
+                    app:text="\\(sinx-siny=2sin(\\frac{x-y}{2})cos(\\frac{x+y}{2})\\)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_tg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_textTg2"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_tg3"
+                    app:text="\\(cosx+cosy=2cos(\\frac{x+y}{2})cos(\\frac{x-y}{2})\\)" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_tg5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textF1"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_tg4"
+                    app:text="\\(cosx-cosy=2sin(\\frac{x+y}{2})sin(\\frac{x-y}{2})\\)" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textF1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Формулы произведения тригонометрических функций"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_tg6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_tg5" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_tg6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_tg7"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_tg5"
+                    app:text="\\(sinx \\cdot siny = \\frac{1}{2} (cos(x-y)-cos(x+y))\\)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_tg7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_tg8"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_tg6"
+                    app:text="\\(cosx \\cdot cosy = \\frac{1}{2} (cos(x-y)+cos(x+y))\\)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_tg8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_textCtg1"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_tg7"
+                    app:text="\\(sinx \\cdot cosy = \\frac{1}{2} (sin(x-y)+sin(x+y))\\)" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textCtg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Универсальная тригонометрическая подстановка"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_ctg1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_tg8" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_ctg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_ctg2"
+                    app:layout_constraintTop_toBottomOf="@+id/textCtg1"
+                    app:text="\\(sinx = \\frac{2tg\\frac{x}{2}}{1+tg^2\\frac{x}{2}}\\)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_ctg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_ctg3"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_ctg1"
+                    app:text="\\(cosx = \\frac{1-tg^2\\frac{x}{2}}{1+tg^2\\frac{x}{2}}\\)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_ctg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_ctg2"
+                    app:text="\\(tgx=\\frac{2tg\\frac{x}{2}}{1-tg^2\\frac{x}{2}}\\)" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_trainer"
+                android:fontFamily="@font/main_text2"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Начать тренировку"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/formula_2pi" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

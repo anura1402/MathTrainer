@@ -15,7 +15,10 @@ import com.anura.magkursach.algebra.Degrees_and_etc;
 import com.anura.magkursach.algebra.Derivatives;
 import com.anura.magkursach.algebra.Progressions;
 import com.anura.magkursach.algebra.Square_table;
+import com.anura.magkursach.trigonometry.Degrees_table;
 import com.anura.magkursach.trigonometry.Degress_to_Rad;
+import com.anura.magkursach.trigonometry.Formulas;
+import com.anura.magkursach.trigonometry.Rad_table;
 import com.anura.magkursach.trigonometry.Rad_to_Degrees;
 import com.anura.magkursach.databinding.FragmentAlgebraBinding;
 
@@ -109,6 +112,27 @@ public class AlgebraFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 intent = new Intent(getActivity(), Degress_to_Rad.class);
+                startActivity(intent);
+            }
+        });
+        card8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getActivity(), Degrees_table.class);
+                startActivity(intent);
+            }
+        });
+        card9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getActivity(), Rad_table.class);
+                startActivity(intent);
+            }
+        });
+        card10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getActivity(), Formulas.class);
                 startActivity(intent);
             }
         });

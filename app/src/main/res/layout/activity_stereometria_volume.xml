@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar2"
+        layout="@layout/app_toolbar"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <ScrollView
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".stereometry.StereometriaVolume">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/border">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textHelp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/main_text2"
+                        android:gravity="start"
+                        android:text="Обозначения:"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="22sp"
+                        app:layout_constraintBottom_toTopOf="@+id/textHelper"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textHelper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="11dp"
+                        android:fontFamily="@font/just_text"
+                        android:gravity="start"
+                        android:text="@string/helper_values_volume"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="14dp"
+                        app:layout_constraintBottom_toTopOf="@+id/textSterSqMain"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textHelp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textSterSqMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Прямая призма"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textHelper"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSterSq1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="11dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Объем прямой призмы"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSqMain" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_SterSq1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textSterSqMain2"
+                    app:layout_constraintTop_toBottomOf="@+id/textSterSq2"
+                    app:text="\\(V=S_{осн}\\cdot h\\)" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textSterSqMain2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="11dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Прямоугольный параллелепипед"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSterSq3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Объем прямоугольного параллелепипеда"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSqMain2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_SterSq3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_SterSq4"
+                    app:layout_constraintTop_toBottomOf="@+id/textSterSq3"
+                    app:text="\\(V=S_{осн}\\cdot h\\)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_SterSq4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textSterSqMain3"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_SterSq3"
+                    app:text="\\(V=abc\\)" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textSterSqMain3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Куб"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSq4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSterSq5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="11dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Объем куба"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSqMain3" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_SterSq5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textSterSqMain4"
+                    app:layout_constraintTop_toBottomOf="@+id/textSterSq5"
+                    app:text="\\(V=a^3\\)" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textSterSqMain4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="11dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Пирамида"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSterSq7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Объем правильной пирамиды"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSqMain4" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_SterSq7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textSterSq8"
+                    app:layout_constraintTop_toBottomOf="@+id/textSterSq7"
+                    app:text="\\(V=\\frac{1}{3}S_{осн}h\\)" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textSterSq8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Объем усеченной пирамиды"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq7" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_SterSq9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textSterSqMain5"
+                    app:layout_constraintTop_toBottomOf="@+id/textSterSq8"
+                    app:text="\\(V=\\frac{1}{3}h(S_1+S_2+\\sqrt{S_1 \\cdot S_2})\\)" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textSterSqMain5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="11dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Цилиндр"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq9"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSterSq10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Объем цилиндра"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSqMain5" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_SterSq12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textSterSqMain6"
+                    app:layout_constraintTop_toBottomOf="@+id/textSterSq10"
+                    app:text="\\(V=\\pi r^2h\\)" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textSterSqMain6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="11dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Конус"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq12"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSterSq13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Объем конуса"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSqMain6" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_SterSq15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textSterSq14"
+                    app:layout_constraintTop_toBottomOf="@+id/textSterSq13"
+                    app:text="\\(V=\\frac{1}{3}\\pi r^2h\\)" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textSterSq14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Объем усеченного конуса"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq17"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq15" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_SterSq17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textSterSqMain7"
+                    app:layout_constraintTop_toBottomOf="@+id/textSterSq14"
+                    app:text="\\(V=\\frac{1}{3}\\pi h(R^2+r^2+Rr)\\)" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textSterSqMain7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="11dp"
+                android:fontFamily="@font/main_text2"
+                android:gravity="start"
+                android:text="Шар"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toTopOf="@+id/textSterSq17"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq17"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSterSq17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Объем шара"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSterSqMain7" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_SterSq20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textSterSq18"
+                    app:layout_constraintTop_toBottomOf="@+id/textSterSq17"
+                    app:text="\\(V=\\frac{4}{3}\\pi R^3\\)" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textSterSq18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Объем шарового сегмента"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq21"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq20" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_SterSq21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/formula_SterSq22"
+                    app:layout_constraintTop_toBottomOf="@+id/textSterSq18"
+                    app:text="\\(V=\\pi h^2(R-\\frac{h}{3})\\)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_SterSq22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textSterSq20"
+                    app:layout_constraintTop_toBottomOf="@+id/formula_SterSq21"
+                    app:text="\\(V=\\frac{1}{6}\\pi h (h^2+3r^2)\\)" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textSterSq20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Объем шарового слоя"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq23"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq22" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_SterSq23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintTop_toBottomOf="@+id/textSterSq20"
+                    app:layout_constraintBottom_toTopOf="@+id/textSterSq21"
+                    app:text="\\(V=\\frac{1}{6}\\pi h^3+\\frac{1}{2}\\pi(r_1^2+r_2^2)h\\)" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textSterSq21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Объем шарового слоя"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_SterSq24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq23" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_SterSq24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintTop_toBottomOf="@+id/textSterSq20"
+                    app:text="\\(V=\\frac{2}{3}\\pi R^2h\\)" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начать тренировку"
+                android:fontFamily="@font/main_text2"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/formula_SterSq23"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_trainer"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

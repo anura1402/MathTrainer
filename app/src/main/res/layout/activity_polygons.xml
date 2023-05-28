@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar2"
+        layout="@layout/app_toolbar"
+        app:titleTextAppearance ="@style/Toolbar.TitleText"/>
+    <ScrollView
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".planimetry.Polygons">
+
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/border">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textHelp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/main_text2"
+                        android:gravity="start"
+                        android:text="Обозначения:"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="22sp"
+                        app:layout_constraintBottom_toTopOf="@+id/textHelper"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textHelper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="11dp"
+                        android:fontFamily="@font/just_text"
+                        android:gravity="start"
+                        android:text="@string/helper_values_polygons"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="14dp"
+                        app:layout_constraintBottom_toTopOf="@+id/textSterSqMain"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textHelp" />
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/textGem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="11dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Стороны и диагонали параллелограмма"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_line"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textGem1"
+                    app:layout_constraintTop_toBottomOf="@+id/textGem2"
+                    app:text="\\(2(a^2+b^2)=d_1^2+d_2^2\\)" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textGem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Сторона и диагонали ромба"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_line_angle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_line" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_line_angle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textGem3"
+                    app:layout_constraintTop_toBottomOf="@+id/textGem2"
+                    app:text="\\(d_1^2+d_2^2=4a^2\\)" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textGem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Диагональ квадрата"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_line_angle_and_dot"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_line_angle" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_line_angle_and_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textGem4"
+                    app:layout_constraintTop_toBottomOf="@+id/textGem3"
+                    app:text="\\(d=a\\sqrt{2}\\)" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textGem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Средняя линия трапеции"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_line_two_dots"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_line_angle_and_dot" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_line_two_dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textGem5"
+                    app:layout_constraintTop_toBottomOf="@+id/textGem4"
+                    app:text="\\(m=\\frac{a+b}{2}\\)" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textGem5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Высота вписанной равнобочной трапеции"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_line_circle_xy"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_line_two_dots" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_line_circle_xy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textGem6"
+                    app:layout_constraintTop_toBottomOf="@+id/textGem5"
+                    app:text="\\(h=\\sqrt{ab}\\)" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textGem6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Радиус вписанной окружности в четырехугольник"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_line_circle_00"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_line_circle_xy" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_line_circle_00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textGem7"
+                    app:layout_constraintTop_toBottomOf="@+id/textGem6"
+                    app:text="\\(r=\\frac{S}{P} \\)" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textGem7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Угол правильного многоугольника"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_sfera_xyz"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_line_circle_00" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_sfera_xyz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintBottom_toTopOf="@+id/textGem8"
+                    app:layout_constraintTop_toBottomOf="@+id/textGem7"
+                    app:text="\\(\\alpha=\\frac{(n-2)\\cdot 180}{n}\\)" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textGem8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Сумма углов многоугольника"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_sfera_000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_sfera_xyz" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_sfera_000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintTop_toBottomOf="@+id/textGem8"
+                    app:layout_constraintBottom_toTopOf="@+id/textGem9"
+                    app:text="\\(s=(n-2)\\cdot 180 \\)" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textGem9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Сторона правильного многоугольника"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_sfera_xyz" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintTop_toBottomOf="@+id/textGem9"
+                    app:layout_constraintBottom_toTopOf="@+id/textGem10"
+                    app:text="\\(a=2Rsin(\\frac{180}{n})\\)" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textGem10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Радиус вписанной окружности правильного многоугольника"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_2" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintTop_toBottomOf="@+id/textGem10"
+                    app:layout_constraintBottom_toTopOf="@+id/textGem11"
+                    app:text="\\(r=Rcos(\\frac{180}{n})\\)" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textGem11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Радиус описанной окружности квадрата"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_3" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintTop_toBottomOf="@+id/textGem11"
+                    app:layout_constraintBottom_toTopOf="@+id/textGem12"
+                    app:text="\\(R=\\frac{a\\sqrt{2}}{2}\\)" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textGem12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Радиус вписанной окружности квадрата"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_4" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintTop_toBottomOf="@+id/textGem12"
+                    app:layout_constraintBottom_toTopOf="@+id/textGem13"
+                    app:text="\\(r=\\frac{a}{2} \\)" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textGem13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Радиус описанной окружности вокруг правильного шестиугольника окружности"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_5" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintTop_toBottomOf="@+id/textGem13"
+                    app:layout_constraintBottom_toTopOf="@+id/textGem14"
+                    app:text="\\(R=a\\)" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textGem14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/just_text"
+                android:gravity="start"
+                android:text="Радиус вписанной окружности правильного шестиугольника"
+                android:textColor="@color/main_text_color"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/formula_5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formula_6" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_theme" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/formula_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:engine="MathJax"
+                    app:layout_constraintTop_toBottomOf="@+id/textGem14"
+                    app:layout_constraintBottom_toTopOf="@+id/textGem15"
+                    app:text="\\(r=\\frac{a\\sqrt{3}}{2} \\)" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Начать тренировку"
+                android:fontFamily="@font/main_text2"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/formula_sfera_000"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_trainer"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

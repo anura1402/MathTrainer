@@ -10,9 +10,14 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
+import com.anura.magkursach.planimetry.Circle;
 import com.anura.magkursach.planimetry.Geometry_figures;
+import com.anura.magkursach.planimetry.Polygons;
+import com.anura.magkursach.planimetry.Squares;
+import com.anura.magkursach.planimetry.Triangles;
 import com.anura.magkursach.stereometry.StereometriaSquares;
 import com.anura.magkursach.databinding.FragmentGeometryBinding;
+import com.anura.magkursach.stereometry.StereometriaVolume;
 
 public class GeometryFragment extends Fragment {
 
@@ -57,10 +62,45 @@ public class GeometryFragment extends Fragment {
                 startActivity(intent);
             }
         });
+        card2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getActivity(), Triangles.class);
+                startActivity(intent);
+            }
+        });
+        card3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getActivity(), Circle.class);
+                startActivity(intent);
+            }
+        });
+        card4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getActivity(), Polygons.class);
+                startActivity(intent);
+            }
+        });
+        card5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getActivity(), Squares.class);
+                startActivity(intent);
+            }
+        });
         card6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 intent = new Intent(getActivity(), StereometriaSquares.class);
+                startActivity(intent);
+            }
+        });
+        card7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(getActivity(), StereometriaVolume.class);
                 startActivity(intent);
             }
         });

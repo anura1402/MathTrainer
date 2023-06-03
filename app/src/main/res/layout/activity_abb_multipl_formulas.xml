@@ -3,6 +3,7 @@
 
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/abb_multipl_formulas"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
@@ -52,28 +53,49 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <View
-                    android:layout_width="4dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:background="@color/main_theme" />
-
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/formula_square_of_abb"
-                    android:layout_width="230dp"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    app:engine="MathJax"
-                    app:layout_constraintBottom_toTopOf="@+id/textView6"
-                    app:layout_constraintTop_toBottomOf="@+id/textView5"
-                    app:text="$$(a+b)^2=a^2+2ab+b^2$$" />
+                    android:orientation="horizontal">
 
-            </LinearLayout>
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/main_theme" />
+
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_square_of_abb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="10dp"
+                        app:engine="MathJax"
+                        app:layout_constraintBottom_toTopOf="@+id/textView6"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5"
+                        app:text="\\((a+b)^2=a^2+2ab+b^2\\)" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_help1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="70dp"
+                    android:src="@drawable/icons8__48" />
+
+            </RelativeLayout>
 
             <TextView
                 android:id="@+id/textView6"
@@ -89,27 +111,44 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/formula_square_of_abb" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <View
-                    android:layout_width="4dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:background="@color/main_theme" />
-
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/formula_square_of_sub"
-                    android:layout_width="230dp"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    app:engine="MathJax"
-                    app:layout_constraintBottom_toTopOf="@+id/textView7"
-                    app:layout_constraintTop_toBottomOf="@+id/textView6"
-                    app:text="$$(a-b)^2=a^2-2ab+b^2$$" />
-            </LinearLayout>
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/main_theme" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_square_of_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:engine="MathJax"
+                        app:layout_constraintBottom_toTopOf="@+id/textView7"
+                        app:layout_constraintTop_toBottomOf="@+id/textView6"
+                        app:text="\\((a-b)^2=a^2-2ab+b^2\\)" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_help2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="70dp"
+                    android:src="@drawable/icons8__48" />
+
+            </RelativeLayout>
 
             <TextView
                 android:id="@+id/textView7"
@@ -125,27 +164,44 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/formula_square_of_sub" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <View
-                    android:layout_width="4dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:background="@color/main_theme" />
-
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/formula_sub_of_squares"
-                    android:layout_width="230dp"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    app:engine="MathJax"
-                    app:layout_constraintBottom_toTopOf="@+id/textView8"
-                    app:layout_constraintTop_toBottomOf="@+id/textView7"
-                    app:text="$$a^2-b^2=(a-b)(a+b)$$" />
-            </LinearLayout>
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/main_theme" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_sub_of_squares"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:engine="MathJax"
+                        app:layout_constraintBottom_toTopOf="@+id/textView8"
+                        app:layout_constraintTop_toBottomOf="@+id/textView7"
+                        app:text="\\(a^2-b^2=(a-b)(a+b)\\)" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_help3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="70dp"
+                    android:src="@drawable/icons8__48" />
+
+            </RelativeLayout>
 
             <TextView
                 android:id="@+id/textView8"
@@ -176,27 +232,44 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <View
-                    android:layout_width="4dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:background="@color/main_theme" />
-
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/formula_cub_of_abb"
-                    android:layout_width="290dp"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    app:engine="MathJax"
-                    app:layout_constraintBottom_toTopOf="@+id/textView10"
-                    app:layout_constraintTop_toBottomOf="@+id/textView9"
-                    app:text="$$(a+b)^3=a^3+3a^2b+3ab^2+b^3$$" />
-            </LinearLayout>
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/main_theme" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_cub_of_abb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:engine="MathJax"
+                        app:layout_constraintBottom_toTopOf="@+id/textView10"
+                        app:layout_constraintTop_toBottomOf="@+id/textView9"
+                        app:text="\\((a+b)^3=a^3+3a^2b+3ab^2+b^3\\)" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_help4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="70dp"
+                    android:src="@drawable/icons8__48" />
+
+            </RelativeLayout>
 
             <TextView
                 android:id="@+id/textView10"
@@ -212,27 +285,44 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/formula_cub_of_abb" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <View
-                    android:layout_width="4dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:background="@color/main_theme" />
-
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/formula_cub_of_sub"
-                    android:layout_width="290dp"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    app:engine="MathJax"
-                    app:layout_constraintBottom_toTopOf="@+id/textView11"
-                    app:layout_constraintTop_toBottomOf="@+id/textView10"
-                    app:text="$$(a-b)^3=a^3-3a^2b+3ab^2-b^3$$" />
-            </LinearLayout>
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/main_theme" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_cub_of_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:engine="MathJax"
+                        app:layout_constraintBottom_toTopOf="@+id/textView11"
+                        app:layout_constraintTop_toBottomOf="@+id/textView10"
+                        app:text="\\((a-b)^3=a^3-3a^2b+3ab^2-b^3\\)" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_help5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="70dp"
+                    android:src="@drawable/icons8__48" />
+
+            </RelativeLayout>
 
             <TextView
                 android:id="@+id/textView11"
@@ -248,27 +338,44 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/formula_cub_of_sub" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <View
-                    android:layout_width="4dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:background="@color/main_theme" />
-
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/formula_abb_of_cub"
-                    android:layout_width="290dp"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    app:engine="MathJax"
-                    app:layout_constraintBottom_toTopOf="@+id/textView12"
-                    app:layout_constraintTop_toBottomOf="@+id/textView11"
-                    app:text="$$a^3+b^3=(a+b)(a^2-ab+b^2)$$" />
-            </LinearLayout>
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/main_theme" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_abb_of_cub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:engine="MathJax"
+                        app:layout_constraintBottom_toTopOf="@+id/textView12"
+                        app:layout_constraintTop_toBottomOf="@+id/textView11"
+                        app:text="\\(a^3+b^3=(a+b)(a^2-ab+b^2)\\)" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_help6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="70dp"
+                    android:src="@drawable/icons8__48" />
+
+            </RelativeLayout>
 
             <TextView
                 android:id="@+id/textView12"
@@ -284,44 +391,60 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/formula_abb_of_cub" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <View
-                    android:layout_width="4dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:background="@color/main_theme" />
-
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/formula_sub_of_cub"
-                    android:layout_width="290dp"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    app:engine="MathJax"
-                    app:layout_constraintTop_toBottomOf="@+id/textView12"
-                    app:layout_constraintBottom_toTopOf="@+id/button"
-                    app:text="$$a^3-b^3=(a-b)(a^2+ab+b^2)$$" />
-            </LinearLayout>
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/main_theme" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_sub_of_cub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:engine="MathJax"
+                        app:layout_constraintBottom_toTopOf="@+id/button"
+                        app:layout_constraintTop_toBottomOf="@+id/textView12"
+                        app:text="\\(a^3-b^3=(a-b)(a^2+ab+b^2)\\)" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_help7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="70dp"
+                    android:src="@drawable/icons8__48" />
+
+            </RelativeLayout>
 
             <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Начать тренировку"
-                android:fontFamily="@font/main_text2"
-                android:textSize="20dp"
-                android:gravity="center"
-                android:padding="10dp"
                 android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp"
-                app:layout_constraintTop_toBottomOf="@+id/formula_sub_of_cub"
-                android:layout_marginTop="10dp"
+                android:background="@drawable/button_trainer"
+                android:fontFamily="@font/main_text2"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Начать тренировку"
                 android:textColor="#ffffff"
-                android:background="@drawable/button_trainer"/>
+                android:textSize="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/formula_sub_of_cub" />
         </LinearLayout>
 
     </ScrollView>

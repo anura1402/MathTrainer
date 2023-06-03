@@ -23,8 +23,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <TextView
+            <CheckBox
+                android:id="@+id/my_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Показать помощь"
+                android:textColor="@color/main_text_color"
+                android:fontFamily="@font/main_text2"
+                android:textSize="22sp"/>            <TextView
                 android:id="@+id/textRad1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -8,6 +8,8 @@ import com.bumptech.glide.request.RequestOptions;
 import android.graphics.Bitmap;
 import android.util.DisplayMetrics;
 import android.webkit.WebView;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.app.Dialog;
 import android.content.Intent;
@@ -65,8 +67,43 @@ public class Abb_multipl_formulas extends AppCompatActivity {
         }
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        dialog = new Dialog(Abb_multipl_formulas.this);
+
         image_help1 = findViewById(R.id.image_help1);
+        image_help2 = findViewById(R.id.image_help2);
+        image_help3 = findViewById(R.id.image_help3);
+        image_help4 = findViewById(R.id.image_help4);
+        image_help5 = findViewById(R.id.image_help5);
+        image_help6 = findViewById(R.id.image_help6);
+        image_help7 = findViewById(R.id.image_help7);
+
+        CheckBox checkBox = findViewById(R.id.my_checkbox);
+        checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked) {
+                    // Обработка изменения состояния CheckBox
+                    image_help1.setVisibility(View.VISIBLE);
+                    image_help2.setVisibility(View.VISIBLE);
+                    image_help3.setVisibility(View.VISIBLE);
+                    image_help4.setVisibility(View.VISIBLE);
+                    image_help5.setVisibility(View.VISIBLE);
+                    image_help6.setVisibility(View.VISIBLE);
+                    image_help7.setVisibility(View.VISIBLE);
+                }
+                else{
+                    image_help1.setVisibility(View.INVISIBLE);
+                    image_help2.setVisibility(View.INVISIBLE);
+                    image_help3.setVisibility(View.INVISIBLE);
+                    image_help4.setVisibility(View.INVISIBLE);
+                    image_help5.setVisibility(View.INVISIBLE);
+                    image_help6.setVisibility(View.INVISIBLE);
+                    image_help7.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+
+        dialog = new Dialog(Abb_multipl_formulas.this);
+
         image_help1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -75,7 +112,6 @@ public class Abb_multipl_formulas extends AppCompatActivity {
                 showPopup(formula);
             }
         });
-        image_help2 = findViewById(R.id.image_help2);
         image_help2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,7 +120,6 @@ public class Abb_multipl_formulas extends AppCompatActivity {
                 showPopup(formula);
             }
         });
-        image_help3 = findViewById(R.id.image_help3);
         image_help3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -93,7 +128,6 @@ public class Abb_multipl_formulas extends AppCompatActivity {
                 showPopup(formula);
             }
         });
-        image_help4 = findViewById(R.id.image_help4);
         image_help4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -102,7 +136,6 @@ public class Abb_multipl_formulas extends AppCompatActivity {
                 showPopup(formula);
             }
         });
-        image_help5 = findViewById(R.id.image_help5);
         image_help5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -111,7 +144,6 @@ public class Abb_multipl_formulas extends AppCompatActivity {
                 showPopup(formula);
             }
         });
-        image_help6 = findViewById(R.id.image_help6);
         image_help6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -120,7 +152,6 @@ public class Abb_multipl_formulas extends AppCompatActivity {
                 showPopup(formula);
             }
         });
-        image_help7 = findViewById(R.id.image_help7);
         image_help7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

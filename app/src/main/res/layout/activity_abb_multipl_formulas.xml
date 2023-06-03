@@ -23,6 +23,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/my_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Показать помощь"
+                android:textColor="@color/main_text_color"
+                android:fontFamily="@font/main_text2"
+                android:textSize="22sp"/>
 
             <TextView
                 android:id="@+id/textView4"
@@ -93,7 +101,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginEnd="70dp"
-                    android:src="@drawable/icons8__48" />
+                    android:src="@drawable/icons8__48"
+                    android:visibility="invisible"/>
 
             </RelativeLayout>
 
@@ -146,7 +155,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginEnd="70dp"
-                    android:src="@drawable/icons8__48" />
+                    android:src="@drawable/icons8__48"
+                    android:visibility="invisible"/>
 
             </RelativeLayout>
 
@@ -199,7 +209,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginEnd="70dp"
-                    android:src="@drawable/icons8__48" />
+                    android:src="@drawable/icons8__48"
+                    android:visibility="invisible"/>
 
             </RelativeLayout>
 
@@ -267,7 +278,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginEnd="70dp"
-                    android:src="@drawable/icons8__48" />
+                    android:src="@drawable/icons8__48"
+                    android:visibility="invisible"/>
 
             </RelativeLayout>
 
@@ -320,7 +332,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginEnd="70dp"
-                    android:src="@drawable/icons8__48" />
+                    android:src="@drawable/icons8__48"
+                    android:visibility="invisible"/>
 
             </RelativeLayout>
 
@@ -373,7 +386,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginEnd="70dp"
-                    android:src="@drawable/icons8__48" />
+                    android:src="@drawable/icons8__48"
+                    android:visibility="invisible"/>
 
             </RelativeLayout>
 
@@ -425,7 +439,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginEnd="70dp"
-                    android:src="@drawable/icons8__48" />
+                    android:src="@drawable/icons8__48"
+                    android:visibility="invisible"/>
 
             </RelativeLayout>
 

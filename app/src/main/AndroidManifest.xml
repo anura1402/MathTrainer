@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -90,6 +91,10 @@
             android:theme="@style/HelpToolbarTheme" />
         <activity
             android:name=".planimetry.Geometry_figures"
+            android:exported="false"
+            android:theme="@style/HelpToolbarTheme" />
+        <activity
+            android:name=".ui.keyboard.sampleActivity"
             android:exported="false"
             android:theme="@style/HelpToolbarTheme" />
         <activity

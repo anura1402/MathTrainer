@@ -25,7 +25,7 @@ public class Rad_table extends AppCompatActivity {
         setContentView(R.layout.activity_rad_table);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
         if (toolbar != null){
-            toolbar.setTitle("Табличные значения (градусы)");
+            toolbar.setTitle("Табличные значения (радианы)");
             setSupportActionBar(toolbar);
         }
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);

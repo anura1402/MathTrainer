@@ -8,6 +8,7 @@ public class Questions {
     private String option3;
     private String option4;
     private String answer;
+    private String answer2;
 
 
     public Questions(String question, String formula, String option1, String option2, String option3, String option4, String answer) {
@@ -18,6 +19,17 @@ public class Questions {
         this.option3 = option3;
         this.option4 = option4;
         this.answer = answer;
+    }
+
+    public Questions(String question, String formula, String answer,String answer2) {
+        this.question = question;
+        this.formula = formula;
+        this.answer = answer;
+        this.answer2 = answer2;
+    }
+
+    public String getAnswer2() {
+        return answer2;
     }
 
     public String getQuestion() {

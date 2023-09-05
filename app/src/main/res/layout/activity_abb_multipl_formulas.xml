@@ -92,7 +92,7 @@
                         app:layout_constraintTop_toBottomOf="@+id/textView5"
                         app:text="\\((a+b)^2=a^2+2ab+b^2\\)" />
 
-
+`
                 </LinearLayout>
 
                 <ImageView
@@ -102,6 +102,14 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginEnd="70dp"
                     android:src="@drawable/icons8__48"
+                    android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/image_mistake1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/icons8_mistake_48"
                     android:visibility="invisible"/>
 
             </RelativeLayout>
@@ -157,6 +165,14 @@
                     android:layout_marginEnd="70dp"
                     android:src="@drawable/icons8__48"
                     android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/image_mistake2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/icons8_mistake_48"
+                    android:visibility="invisible"/>
 
             </RelativeLayout>
 
@@ -210,6 +226,14 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginEnd="70dp"
                     android:src="@drawable/icons8__48"
+                    android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/image_mistake3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/icons8_mistake_48"
                     android:visibility="invisible"/>
 
             </RelativeLayout>
@@ -280,6 +304,14 @@
                     android:layout_marginEnd="70dp"
                     android:src="@drawable/icons8__48"
                     android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/image_mistake4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/icons8_mistake_48"
+                    android:visibility="invisible"/>
 
             </RelativeLayout>
 
@@ -333,6 +365,14 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginEnd="70dp"
                     android:src="@drawable/icons8__48"
+                    android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/image_mistake5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/icons8_mistake_48"
                     android:visibility="invisible"/>
 
             </RelativeLayout>
@@ -388,6 +428,14 @@
                     android:layout_marginEnd="70dp"
                     android:src="@drawable/icons8__48"
                     android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/image_mistake6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/icons8_mistake_48"
+                    android:visibility="invisible"/>
 
             </RelativeLayout>
 
@@ -440,6 +488,14 @@
                     android:layout_alignParentRight="true"
                     android:layout_marginEnd="70dp"
                     android:src="@drawable/icons8__48"
+                    android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/image_mistake7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/icons8_mistake_48"
                     android:visibility="invisible"/>
 
             </RelativeLayout>

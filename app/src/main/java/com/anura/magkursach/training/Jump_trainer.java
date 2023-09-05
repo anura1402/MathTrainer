@@ -13,6 +13,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.anura.magkursach.R;
+import com.anura.magkursach.ui.keyboard.sampleActivity;
 
 import java.util.Objects;
 
@@ -48,6 +49,17 @@ public class Jump_trainer extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             intent = new Intent(Jump_trainer.this, TrainActivity.class);
+                            intent.putExtra("EXTRA_NEXT_ACTIVITY_CLASS", parentClass);
+                            intent.putExtra("activity_name", activityName);
+                            startActivity(intent);
+                        }
+                    });
+                }
+                if (radioButton.getText().toString().equals("Средняя")){
+                    button.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            intent = new Intent(Jump_trainer.this, sampleActivity.class);
                             intent.putExtra("EXTRA_NEXT_ACTIVITY_CLASS", parentClass);
                             intent.putExtra("activity_name", activityName);
                             startActivity(intent);

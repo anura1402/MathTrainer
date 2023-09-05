@@ -95,7 +95,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_pi3"
                     app:layout_constraintTop_toBottomOf="@+id/formula_pi6"
-                    app:text="\\(sin\\frac{\\pi}{6}^{\\circ}=\\frac{1}{2}\\)" />
+                    app:text="\\(sin\\frac{\\pi}{6}=\\frac{1}{2}\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -121,7 +121,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_pi2"
                     app:layout_constraintTop_toBottomOf="@+id/formula_pi4"
-                    app:text="\\(sin\\frac{\\pi}{4}^{\\circ}=\\frac{\\sqrt{2}}{2}\\)" />
+                    app:text="\\(sin\\frac{\\pi}{4}=\\frac{\\sqrt{2}}{2}\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -147,7 +147,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_pi22"
                     app:layout_constraintTop_toBottomOf="@+id/formula_pi3"
-                    app:text="\\(sin\\frac{\\pi}{3}^{\\circ}=\\frac{\\sqrt{3}}{2}\\)" />
+                    app:text="\\(sin\\frac{\\pi}{3}=\\frac{\\sqrt{3}}{2}\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -173,7 +173,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/textRad2"
                     app:layout_constraintTop_toBottomOf="@+id/formula_pi2"
-                    app:text="\\(sin\\frac{\\pi}{2}^{\\circ}=1\\)" />
+                    app:text="\\(sin\\frac{\\pi}{2}=1\\)" />
             </LinearLayout>
 
             <TextView
@@ -214,7 +214,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_3pi4"
                     app:layout_constraintTop_toBottomOf="@+id/textRad2"
-                    app:text="\\(sin\\frac{2\\pi}{3}^{\\circ}=\\frac{\\sqrt{3}}{2}\\)" />
+                    app:text="\\(sin\\frac{2\\pi}{3}=\\frac{\\sqrt{3}}{2}\\)" />
 
             </LinearLayout>
 
@@ -241,7 +241,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_5pi6"
                     app:layout_constraintTop_toBottomOf="@+id/formula_2pi3"
-                    app:text="\\(sin\\frac{3\\pi}{4}^{\\circ}=\\frac{\\sqrt{2}}{2}\\)" />
+                    app:text="\\(sin\\frac{3\\pi}{4}=\\frac{\\sqrt{2}}{2}\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -267,7 +267,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_pi"
                     app:layout_constraintTop_toBottomOf="@+id/formula_3pi4"
-                    app:text="\\(sin\\frac{5\\pi}{6}^{\\circ}=\\frac{1}{2}\\)" />
+                    app:text="\\(sin\\frac{5\\pi}{6}=\\frac{1}{2}\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -293,7 +293,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/textRad3"
                     app:layout_constraintTop_toBottomOf="@+id/formula_5pi6"
-                    app:text="\\(sin\\pi^{\\circ}=0\\)" />
+                    app:text="\\(sin\\pi=0\\)" />
             </LinearLayout>
 
             <TextView
@@ -360,7 +360,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_4pi3"
                     app:layout_constraintTop_toBottomOf="@+id/formula_7pi6"
-                    app:text="\\(cos\\frac{\\pi}{6}^{\\circ}=\\frac{\\sqrt{3}}{2}\\)" />
+                    app:text="\\(cos\\frac{\\pi}{6}=\\frac{\\sqrt{3}}{2}\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -386,7 +386,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_3pi2"
                     app:layout_constraintTop_toBottomOf="@+id/formula_5pi4"
-                    app:text="\\(cos\\frac{\\pi}{4}^{\\circ}=\\frac{\\sqrt{45}}{2}\\)" />
+                    app:text="\\(cos\\frac{\\pi}{4}=\\frac{\\sqrt{45}}{2}\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -412,7 +412,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_3pi22"
                     app:layout_constraintTop_toBottomOf="@+id/formula_5pi6"
-                    app:text="\\(cos\\frac{\\pi}{3}^{\\circ}=\\frac{1}{2}\\)" />
+                    app:text="\\(cos\\frac{\\pi}{3}=\\frac{1}{2}\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -438,7 +438,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/textRad4"
                     app:layout_constraintTop_toBottomOf="@+id/formula_3pi2"
-                    app:text="\\(cos\\frac{\\pi}{2}^{\\circ}=0\\)" />
+                    app:text="\\(cos\\frac{\\pi}{2}=0\\)" />
             </LinearLayout>
 
             <TextView
@@ -479,7 +479,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_7pi4"
                     app:layout_constraintTop_toBottomOf="@+id/textRad3"
-                    app:text="\\(cos\\frac{2\\pi}{3}^{\\circ}=-\\frac{1}{2}\\)" />
+                    app:text="\\(cos\\frac{2\\pi}{3}=-\\frac{1}{2}\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -505,7 +505,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_11pi6"
                     app:layout_constraintTop_toBottomOf="@+id/formula_5pi3"
-                    app:text="\\(cos\\frac{3\\pi}{4}^{\\circ}=-\\frac{\\sqrt{2}}{2}\\)" />
+                    app:text="\\(cos\\frac{3\\pi}{4}=-\\frac{\\sqrt{2}}{2}\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -531,7 +531,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_2pi"
                     app:layout_constraintTop_toBottomOf="@+id/formula_7pi4"
-                    app:text="\\(cos\\frac{5\\pi}{6}^{\\circ}=-\\frac{\\sqrt{3}}{2}\\)" />
+                    app:text="\\(cos\\frac{5\\pi}{6}=-\\frac{\\sqrt{3}}{2}\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -557,7 +557,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/textTg1"
                     app:layout_constraintTop_toBottomOf="@+id/formula_11pi6"
-                    app:text="\\(cos\\pi^{\\circ}=-1\\)" />
+                    app:text="\\(cos\\pi=-1\\)" />
             </LinearLayout>
 
             <TextView
@@ -624,7 +624,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_tg3"
                     app:layout_constraintTop_toBottomOf="@+id/formula_tg1"
-                    app:text="\\(tg\\frac{\\pi}{6}^{\\circ}=\\frac{\\sqrt{3}}{3}\\)" />
+                    app:text="\\(tg\\frac{\\pi}{6}=\\frac{\\sqrt{3}}{3}\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -650,7 +650,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_tg4"
                     app:layout_constraintTop_toBottomOf="@+id/formula_tg2"
-                    app:text="\\(tg\\frac{\\pi}{4}^{\\circ}=1\\)" />
+                    app:text="\\(tg\\frac{\\pi}{4}=1\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -676,7 +676,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_textTg2"
                     app:layout_constraintTop_toBottomOf="@+id/formula_tg3"
-                    app:text="\\(tg\\frac{\\pi}{3}^{\\circ}=\\sqrt{3}\\)" />
+                    app:text="\\(tg\\frac{\\pi}{3}=\\sqrt{3}\\)" />
             </LinearLayout>
 
             <TextView
@@ -717,7 +717,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_tg6"
                     app:layout_constraintTop_toBottomOf="@+id/textTg2"
-                    app:text="\\(tg\\frac{2\\pi}{3}^{\\circ}=-\\sqrt{3}\\)" />
+                    app:text="\\(tg\\frac{2\\pi}{3}=-\\sqrt{3}\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -743,7 +743,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_tg7"
                     app:layout_constraintTop_toBottomOf="@+id/formula_tg5"
-                    app:text="\\(tg\\frac{3\\pi}{4}^{\\circ}=-1\\)" />
+                    app:text="\\(tg\\frac{3\\pi}{4}=-1\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -769,7 +769,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_tg8"
                     app:layout_constraintTop_toBottomOf="@+id/formula_tg6"
-                    app:text="\\(tg\\frac{5\\pi}{6}^{\\circ}=-\\frac{\\sqrt{3}}{3}\\)" />
+                    app:text="\\(tg\\frac{5\\pi}{6}=-\\frac{\\sqrt{3}}{3}\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -795,7 +795,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_textCtg1"
                     app:layout_constraintTop_toBottomOf="@+id/formula_tg7"
-                    app:text="\\(tg\\pi^{\\circ}=0\\)" />
+                    app:text="\\(tg\\pi=0\\)" />
             </LinearLayout>
 
             <TextView
@@ -836,7 +836,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_ctg2"
                     app:layout_constraintTop_toBottomOf="@+id/textCtg1"
-                    app:text="\\(ctg\\frac{\\pi}{6}^{\\circ}=\\sqrt{3}\\)" />
+                    app:text="\\(ctg\\frac{\\pi}{6}=\\sqrt{3}\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -862,7 +862,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_ctg3"
                     app:layout_constraintTop_toBottomOf="@+id/formula_ctg1"
-                    app:text="\\(ctg\\frac{\\pi}{4}^{\\circ}=1\\)" />
+                    app:text="\\(ctg\\frac{\\pi}{4}=1\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -888,7 +888,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_ctg4"
                     app:layout_constraintTop_toBottomOf="@+id/formula_ctg2"
-                    app:text="\\(ctg\\frac{\\pi}{3}^{\\circ}=\\frac{\\sqrt{3}}{3}\\)" />
+                    app:text="\\(ctg\\frac{\\pi}{3}=\\frac{\\sqrt{3}}{3}\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -914,7 +914,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_textCtg2"
                     app:layout_constraintTop_toBottomOf="@+id/formula_ctg3"
-                    app:text="\\(ctg\\frac{\\pi}{2}^{\\circ}=0\\)" />
+                    app:text="\\(ctg\\frac{\\pi}{2}=0\\)" />
             </LinearLayout>
 
             <TextView
@@ -955,7 +955,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_ctg6"
                     app:layout_constraintTop_toBottomOf="@+id/textCtg2"
-                    app:text="\\(ctg\\frac{2\\pi}{3}^{\\circ}=-\\frac{\\sqrt{3}}{3}\\)" />
+                    app:text="\\(ctg\\frac{2\\pi}{3}=-\\frac{\\sqrt{3}}{3}\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -981,7 +981,7 @@
                     app:engine="MathJax"
                     app:layout_constraintBottom_toTopOf="@+id/formula_ctg7"
                     app:layout_constraintTop_toBottomOf="@+id/formula_ctg5"
-                    app:text="\\(ctg\\frac{3\\pi}{4}^{\\circ}=-1\\)" />
+                    app:text="\\(ctg\\frac{3\\pi}{4}=-1\\)" />
             </LinearLayout>
 
             <LinearLayout
@@ -1006,7 +1006,7 @@
                     android:layout_marginBottom="10dp"
                     app:engine="MathJax"
                     app:layout_constraintTop_toBottomOf="@+id/formula_ctg6"
-                    app:text="\\(ctg\\frac{5\\pi}{6}^{\\circ}=-\\sqrt{3}\\)" />
+                    app:text="\\(ctg\\frac{5\\pi}{6}=-\\sqrt{3}\\)" />
             </LinearLayout>
 
             <Button

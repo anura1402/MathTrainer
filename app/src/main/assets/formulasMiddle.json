@@ -1,0 +1,103 @@
+{
+  "formulas":
+    {
+      "Abb_multipl_formulas": [
+        {
+          "question": "Разность кубов:",
+          "formula": "x^3-y^3= (x-y)(x^2...y^2)",
+          "correct": "$$x^3-y^3=(x-y)(x^2+xy+y^2)$$",
+          "correct2": ""
+        },
+        {
+          "question": "Разность кубов:",
+          "formula": "x^3-y^3= (...)(x^2+xy+y^2)",
+          "correct": "$$x^3-y^3=(x-y)(x^2+xy+y^2)$$",
+          "correct2": ""
+        },
+        {
+          "question": "Сумма кубов:",
+          "formula": "x^3+y^3= (...)(x^2-xy+y^2)",
+          "correct": "$$x^3+y^3=(x+y)(x^2-xy+y^2)$$",
+          "correct2": ""
+        },
+        {
+          "question": "Сумма кубов:",
+          "formula": "x^3+y^3= (x+y)(x^2...y^2)",
+          "correct": "$$x^3+y^3=(x+y)(x^2-xy+y^2)$$",
+          "correct2": ""
+        },
+        {
+          "question": "Квадрат суммы:",
+          "formula": "(x+y)^2= x^2...y^2",
+          "correct": "$$(x+y)^2=x^2+2xy+y^2$$",
+          "correct2": ""
+        },
+        {
+          "question": "Квадрат разности:",
+          "formula": "(x-y)^2= x^2...y^2",
+          "correct": "$$(x-y)^2=x^2-2xy+y^2$$",
+          "correct2": ""
+        },
+        {
+          "question": "Разность квадратов:",
+          "formula": "x^2-y^2=(x-y)(...)",
+          "correct": "$$x^2-y^2=(x-y)(x+y)$$",
+          "correct2": ""
+        },
+        {
+          "question": "Куб суммы:",
+          "formula": "(x+y)^3=x^3...y^3",
+          "correct": "$$(x+y)^3=x^3+3x^{2}y+3xy^{2}+y^3$$",
+          "correct2": "$$(x+y)^3=x^3+3xy^{2}+3x^{2}y+y^3$$"
+        },
+        {
+          "question": "Куб разности:",
+          "formula": "(x-y)^3=x^3...y^3",
+          "correct": "$$(x-y)^3=x^3-3x^{2}y+3xy^{2}-y^3$$",
+          "correct2": "$$(x-y)^3=x^3+3xy^{2}-3x^{2}y-y^3$$"
+        }
+      ],
+      "Geometry_figures": [
+        {
+          "question": "Easy Questions Answer A",
+          "formula": "Easy Questions Answer A",
+          "answer1": "A) A",
+          "answer2": "B) B",
+          "answer3": "C) C",
+          "answer4": "D) D",
+          "correct": "A) A"
+        },
+        {
+          "question": "Easy Questions Answer B",
+          "formula": "Easy Questions Answer A",
+          "answer1": "A) A",
+          "answer2": "B) B",
+          "answer3": "C) C",
+          "answer4": "D) D",
+          "correct": "B) B"
+        }
+      ],
+      "Rad_to_Degrees": [
+        {
+          "question": "Easy Questions Answer A",
+          "formula": "Easy Questions Answer A",
+          "answer1": "A) A",
+          "answer2": "B) B",
+          "answer3": "C) C",
+          "answer4": "D) D",
+          "correct": "A) A"
+        }
+      ],
+      "StereometriaSquares": [
+        {
+          "question": "Easy Questions Answer A",
+          "formula": "Easy Questions Answer A",
+          "answer1": "A) A",
+          "answer2": "B) B",
+          "answer3": "C) C",
+          "answer4": "D) D",
+          "correct": "A) A"
+        }
+      ]
+    }
+}

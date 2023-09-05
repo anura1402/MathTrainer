@@ -43,6 +43,8 @@ dependencies {
 
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'io.github.kexanie.library:MathView:0.0.6'
+    implementation 'in.hourglass.mathrender:katexmathview:1.0.3'
+
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.25'
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'

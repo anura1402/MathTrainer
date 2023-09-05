@@ -21,6 +21,7 @@ public class ResultActivity extends AppCompatActivity {
     TextView correctt, wrongt, resultinfo;
     ImageView resultImage;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
